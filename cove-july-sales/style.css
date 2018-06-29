@@ -886,7 +886,8 @@ body.ie .slide:after {
     width: 100%; } }
 
 #fun hr {
-  border: 1px solid white; }
+  border: 1px solid white;
+  border-style: solid; }
 
 #fun .row + h2 {
   color: #699c41;
