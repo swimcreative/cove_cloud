@@ -420,6 +420,9 @@ header {
 
 .burger,
 .close {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
   position: relative;
   top: -1px; }
   .burger span,
@@ -833,6 +836,9 @@ body.ie .slide:after {
   background-image: url(//cdn.rawgit.com/swimcreative/cove_cloud/master/cove-july-sales/assets/img/border-wiggle.png);
   margin: 2em 0 1.5em 0; }
 
+#fun h1, #fun h2, #fun h3, #fun h4, #fun h5, #fun h6 {
+  font-weight: 700; }
+
 @media (min-width: 768px) {
   #fun .right {
     padding-left: 0; } }
@@ -880,8 +886,7 @@ body.ie .slide:after {
     width: 100%; } }
 
 #fun hr {
-  height: 1px;
-  border-style: solid; }
+  border: 1px solid white; }
 
 #fun .row + h2 {
   color: #699c41;
