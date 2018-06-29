@@ -111,7 +111,8 @@ button:not(.flickity-prev-next-button), .btn-custom {
   border-left: none; }
   button:not(.flickity-prev-next-button):hover, .btn-custom:hover {
     background: #82b957;
-    border-bottom: none; }
+    border-bottom: none;
+    color: white; }
   @supports (-webkit-overflow-scrolling: touch) {
     button:not(.flickity-prev-next-button), .btn-custom {
       font-weight: 900 !important; } }
@@ -488,6 +489,9 @@ header {
   background-size: cover;
   background-color: white;
   color: white; }
+  #hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 {
+    color: white;
+    font-weight: 700; }
   #hero ul {
     padding-left: 1.6em; }
   #hero li {
@@ -636,6 +640,7 @@ header {
   #slider h1, #slider h2, #slider h3, #slider h4, #slider h5, #slider h6 {
     color: #699c41; }
   #slider.carousel {
+    padding: 0;
     background: #001923;
     display: block;
     -webkit-box-align: stretch;
@@ -864,12 +869,19 @@ body.ie .slide:after {
     padding: 1rem .5rem;
     width: calc(100% / 3); }
 
+#fun .btn-custom:hover {
+  color: white; }
+
 #fun .border + .row {
   margin: 0 -.5rem; }
 
 @media (max-width: 499px) {
   #fun .images img {
     width: 100%; } }
+
+#fun hr {
+  height: 1px;
+  border-style: solid; }
 
 #fun .row + h2 {
   color: #699c41;
@@ -956,6 +968,9 @@ body.ie .slide:after {
 #coupon {
   background: #00aeef;
   color: white; }
+  #coupon h1, #coupon h2, #coupon h3, #coupon h4, #coupon h5, #coupon h6 {
+    color: white;
+    font-weight: 700; }
   @media (min-width: 768px) {
     #coupon .last p {
       min-height: 136px; } }
