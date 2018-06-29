@@ -150,7 +150,7 @@ jQuery(function($) {
     video.on('click', function(e) {
       e.preventDefault();
       lightbox.slideDown();
-      vidbox.html('<iframe width="560" height="315" src="https://www.youtube.com/embed/vGXjuOO7s2s?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>').fitVids();
+      vidbox.html('<iframe width="560" height="315" src="//www.youtube.com/embed/vGXjuOO7s2s?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>').fitVids();
     });
 
     close.on('click', function(e) {
@@ -187,7 +187,7 @@ jQuery(function($) {
   cove.bgVideo = function() {
   $('.vid-wrapper').YTPlayer({
     fitToBackground: true,
-    videoId: '7-Lgv0pSlV8',
+    videoId: 'NXVYxBE1riU',
     playerVars: {
       modestbranding: 0,
       autoplay: 1,
