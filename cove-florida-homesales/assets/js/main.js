@@ -250,6 +250,21 @@ jQuery(function($) {
   });
   }
 
+// FAQ
+  cove.faq = function() {
+
+    var faq = $('#faq');
+
+    faq.find('h5').on('click', function() {
+      if($(this).next('p').is(':visible')) {
+        $(this).next('p').slideUp(150);
+      } else {
+      faq.find('.row p').slideUp(150);
+        $(this).next('p').slideDown(150);
+      }
+    });
+  }
+
 
 
   cove.shadow = function() {
@@ -345,6 +360,7 @@ jQuery(function($) {
     cove.smoothScroll();
     cove.menuToggle();
     cove.fitVids();
+    cove.faq();
     //cove.parallax();
     //cove.menuHighlight();
     cove.bgVideo();
