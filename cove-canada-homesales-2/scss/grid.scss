@@ -1,0 +1,114 @@
+.container {
+  padding-left:$base;
+  padding-right:$base;
+  margin:0 auto;
+  max-width:$lg;
+  width:100%;
+}
+
+main section {
+  @include pad($medium);
+  position:relative;
+  overflow:hidden;
+  @media (max-width:$tablet-down) {
+  //  padding:0;
+  }
+}
+
+.row {
+  margin:0;
+  display:flex;
+  align-items:center;
+  @media (max-width:$tablet-down) {
+    flex-direction:column;
+    > div {
+      padding-top:$base;
+      padding-bottom:$base;
+    }
+  }
+}
+
+@mixin one_two {
+  @media (min-width:$tablet-up) {
+    > div:first-child {
+      width:calc(100% / 3 * 2);
+      padding-right:4%;
+    }
+    > div:last-child {
+      width:calc(100% / 3);
+      padding-left:10%;
+    }
+  }
+  width:100%;
+  max-width:100%;
+  flex-basis:100%;
+}
+
+@mixin two_one{
+  @media (min-width:$tablet-up) {
+    > div:last-child {
+      width:calc(100% / 3 * 2);
+      padding-left:10%;
+
+    }
+    > div:first-child {
+      width:calc(100% / 3);
+      padding-right:4%
+    }
+  }
+  width:100%;
+  max-width:100%;
+  flex-basis:100%;
+
+}
+
+@mixin half_half {
+  @media (min-width:$tablet-up) {
+    > div {
+      width:50%;
+      flex-basis:50%;
+      max-width:50%;
+    }
+  }
+  width:100%;
+  max-width:100%;
+  flex-basis:100%;
+}
+
+//* GRID COLUMNS MIXIN *//
+// apply this to the parent of the grid items
+// args: (items across) Large screen, medium screen, small screen, item spacing
+@mixin even_columns($gl: 3, $gm: 2, $gs: 1, $space: $base-spacing) {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:top;
+  margin:-$space;
+  justify-content:left;
+  @media (max-width:$mobile-down) {
+    flex-direction:column;
+  }
+  > * {
+  padding:$space;
+  @media (max-width:$mobile-down) {
+    width:100%;
+    max-width:100%;
+    flex-basis:100%;
+    }
+    @media (min-width:$mobile-up) {
+      width:calc(100% / #{$gs});
+      max-width:calc(100% / #{$gs});
+      flex-basis:calc(100% / #{$gs});
+    }
+    @media (min-width:$tablet-up) {
+      width:calc(100% / #{$gm});
+      max-width:calc(100% / #{$gm});
+      flex-basis:calc(100% / #{$gm});
+    }
+    @media (min-width:$desktop-up) {
+      width:calc(100% / #{$gl});
+      flex-basis:calc(100% / #{$gl});
+      max-width:calc(100% / #{$gl});
+    }
+  }
+}

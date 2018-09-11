@@ -1,0 +1,41 @@
+#mod {
+  background:$tan;
+  .container {
+    position:static;
+  }
+  .row {
+    p {
+      font-size:1.2rem;
+    }
+    @include two_one;
+    justify-content:flex-end;
+    > div:last-child {
+      float:right;
+    //  margin-bottom:1.5em;
+    }
+    > div:first-child {
+
+      @media (min-width:$tablet-up) {
+        position:absolute;
+        left:0;
+        right:66%;
+        bottom:0;
+        top:0;
+        margin-bottom:0;
+        width:38%;
+        min-height:1px;
+      }
+      order:2;
+      min-height:70vw;
+      width:100%;
+      background:url(//designsbypatrice.net/cove-landing/canada-homesales-1/assets/img/couple-lounge.jpg);
+      @include cover;
+      //margin-bottom:10vh;
+    //  margin-top:-1.5em;
+    }
+  }
+}
+
+#blueprint {
+  @include pad($small);
+}

@@ -1,0 +1,46 @@
+.flickity-prev-next-button  {
+    top:50%;
+    transform:translateY(-50%);
+    position:absolute;
+    z-index:9999;
+    cursor:pointer;
+    border:none;
+    background:None;
+    &.next {
+      right:$base * 1.5 !important;
+    }
+    opacity:.9;
+    &:hover {
+      opacity:1;
+    }
+    &[disabled] {
+      opacity:.3;
+    }
+    svg {
+      height:50px;
+      margin-top:-25px;
+      path {
+        fill:white;
+      }
+    }
+  }
+
+  main .flickity-page-dots {
+    text-align:left;
+    left:$base;
+    li:first-child {
+      margin-left:0;
+    }
+    bottom:$base !important;
+    .dot {
+      opacity:.5;
+      &.is-selected,
+      &:hover {
+        background:$blue;
+        opacity:1;
+      }
+      background:white;
+      height:16px;
+      width:16px;
+    }
+  }
