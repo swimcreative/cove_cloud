@@ -819,14 +819,14 @@ main .flickity-page-dots {
     #hero .carousel .container > * {
       display: block; }
   #hero .carousel .carousel-item {
-    background-image: url(http:https://cdn.rawgit.com/swimcreative/cove_cloud/master/cove-canada-homesales-2/assets/img/slide1.jpg);
+    background-image: url(http:https://cdn.rawgit.com/swimcreative/cove_cloud/master/cove-canada-homesales-2/assets/img/slide_one.jpg);
     background-size: cover;
     background-position: center center;
     height: 100%;
     background-color: #282829;
     width: 100%; }
     #hero .carousel .carousel-item:nth-child(2) {
-      background-image: url(http:https://cdn.rawgit.com/swimcreative/cove_cloud/master/cove-canada-homesales-2/assets/img/slide2.jpg); }
+      background-image: url(http:https://cdn.rawgit.com/swimcreative/cove_cloud/master/cove-canada-homesales-2/assets/img/slide_two.jpg); }
     @media (max-width: 767px) {
       #hero .carousel .carousel-item {
         background-position: 80% center; } }
