@@ -256,11 +256,11 @@ jQuery(function($) {
     var faq = $('#faq');
 
     faq.find('h5').on('click', function() {
-      if($(this).next('p').is(':visible')) {
-        $(this).next('p').slideUp(150);
+      if($(this).next('.faq').is(':visible')) {
+        $(this).next('.faq').slideUp(150);
       } else {
-      faq.find('.row p').slideUp(150);
-        $(this).next('p').slideDown(150);
+      faq.find('.row .faq').slideUp(150);
+        $(this).next('.faq').slideDown(150);
       }
     });
   }
