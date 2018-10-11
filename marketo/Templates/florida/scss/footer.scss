@@ -1,0 +1,110 @@
+footer {
+  p {
+    font-size:15px;
+  }
+  .row div li {
+    list-style-type:none !important;
+  }
+  font-family:'musei-sans', $sys;
+  @include pad($small);
+  img {
+    max-width:300px;
+    width:100%;
+    margin-bottom:1em;
+  }
+  .row {
+    align-items:flex-start;
+    display:flex;
+    @include even_columns(3,3,2, $base);
+  }
+  .footer-item {
+    font-weight:500;
+    strong {
+      font-family:$sys;
+    }
+    &:nth-child(3) {
+      display:none;
+      .btn-custom:hover {
+                border-color:$orange;
+      }
+      strong {
+        margin-bottom:$base / 2;
+        display:inline-block;
+      }
+    }
+    &:first-of-type {
+      a {
+        color:$dark-gray;
+        &:hover {
+          color:$green;
+        }
+      }
+    }
+    font-size:15px;
+    ul {
+      @include clearfix;
+      padding-left:0;
+    }
+    &:last-of-type {
+      ul {
+        margin-top:$base;
+      }
+      li {
+        list-style-type:none;
+        float:left;
+        width:50%;
+        a {
+          font-weight:500;
+          color:$dark-gray;
+          &:hover {
+            color:$green;
+            }
+          }
+        }
+      }
+    }
+    .btn-custom {
+      font-size:14px;
+      background:none;
+      border:1px solid $green;
+      color:$green;
+      font-weight:400;
+      padding:$base / 1.25;
+      &:hover {
+        color:white;
+      }
+  }
+}
+
+footer .btn-custom:hover {
+  border-color:$orange;
+}
+
+.social {
+  margin-top:0;
+  .fa {
+    position:relative;
+    top:1px;
+  }
+  p {
+    margin-bottom:$base;
+  }
+  li {
+    float:left;
+    margin-right:1em;
+    a {
+      font-size:20px;
+      text-align:center;
+      color:$green;
+      padding:10px 15px;
+      min-width:48px;
+      display:inline-block;
+      border:1px solid $green;
+      &:hover {
+        color:White;
+        background:$orange;
+        border-color:$orange;
+      }
+    }
+  }
+}

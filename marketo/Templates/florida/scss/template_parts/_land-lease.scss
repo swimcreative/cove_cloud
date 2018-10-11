@@ -1,0 +1,23 @@
+#land-lease {
+  .btn-custom {
+    color:white !important;
+  }
+  @include pad($large);
+  background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/cove-house.jpg);
+  @include cover;
+  .row {
+    h2 {
+      @include border_accent;
+      margin-bottom:.7em;
+      padding-bottom:.7em;
+      &:after {
+        bottom:0em;
+      }
+    }
+    @include half_half;
+    > div:last-child {
+      background:rgba(255,255,255, .95);
+      padding:$base * 2;
+    }
+  }
+}
