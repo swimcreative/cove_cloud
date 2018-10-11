@@ -1,7 +1,7 @@
 #hero {
   @include cover;
   padding:0;
-  background-color:#222;
+  background-color:$dark-blue;
   @include headings {
     color:white;
     small {
