@@ -84,7 +84,8 @@ input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
 }
 
 // BUTTON
-button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
+button:not(.flickity-prev-next-button), .btn-custom, input[type=submit],
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
   font-family:'museo-sans', $sys;
   cursor:pointer;
   appearance:none;
@@ -100,6 +101,7 @@ button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
   margin-bottom:.5em;
   display:inline-block;
   color:white;
+  border:none;
   text-transform:uppercase;
   & + & {
     margin-left:1em;
@@ -107,6 +109,7 @@ button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
   &:hover {
     background:$orange;
     border-bottom:none;
+    border:none;
     color:white !important;
   }
   border-top:none;

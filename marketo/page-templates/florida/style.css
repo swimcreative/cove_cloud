@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,800");
 @import url("https://fonts.googleapis.com/css?family=Oswald:700");
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
@@ -95,7 +96,8 @@ ul {
 form input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
   padding: 13.33333px; }
 
-button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
+button:not(.flickity-prev-next-button), .btn-custom, input[type=submit],
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
   font-family: "museo-sans", "museo-sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   cursor: pointer;
   -webkit-appearance: none;
@@ -112,6 +114,7 @@ button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
   margin-bottom: .5em;
   display: inline-block;
   color: white;
+  border: none;
   text-transform: uppercase;
   border-top: none;
   outline: none;
@@ -122,14 +125,25 @@ button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
   border-left: none;
   font-weight: 700;
   text-shadow: none; }
-  button:not(.flickity-prev-next-button) + button:not(.flickity-prev-next-button), .btn-custom + button:not(.flickity-prev-next-button), input[type=submit] + button:not(.flickity-prev-next-button), button:not(.flickity-prev-next-button) + .btn-custom, .btn-custom + .btn-custom, input[type=submit] + .btn-custom, button:not(.flickity-prev-next-button) + input[type=submit], .btn-custom + input[type=submit], input[type=submit] + input[type=submit] {
+  button:not(.flickity-prev-next-button) + button:not(.flickity-prev-next-button), .btn-custom + button:not(.flickity-prev-next-button), input[type=submit] + button:not(.flickity-prev-next-button),
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton + button:not(.flickity-prev-next-button), button:not(.flickity-prev-next-button) + .btn-custom, .btn-custom + .btn-custom, input[type=submit] + .btn-custom,
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton + .btn-custom, button:not(.flickity-prev-next-button) + input[type=submit], .btn-custom + input[type=submit], input[type=submit] + input[type=submit],
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton + input[type=submit], button:not(.flickity-prev-next-button) +
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton, .btn-custom +
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton, input[type=submit] +
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton,
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton +
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     margin-left: 1em; }
-  button:not(.flickity-prev-next-button):hover, .btn-custom:hover, input[type=submit]:hover {
+  button:not(.flickity-prev-next-button):hover, .btn-custom:hover, input[type=submit]:hover,
+  body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
     background: #f8ab41;
     border-bottom: none;
+    border: none;
     color: white !important; }
   @supports (-webkit-overflow-scrolling: touch) {
-    button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
+    button:not(.flickity-prev-next-button), .btn-custom, input[type=submit],
+    body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
       font-weight: 900 !important; } }
 
 p {
@@ -206,7 +220,12 @@ fieldset li label {
   margin-bottom: 10px !important; }
 
 select {
-  border-radius: 0 !important; }
+  border-radius: 0 !important;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC"); }
+  select:after {
+    content: '▼'; }
 
 .checkbox-option input {
   -webkit-appearance: checkbox !important;
@@ -218,7 +237,7 @@ select {
   -moz-appearance: radio !important;
   appearance: radio !important; }
 
-input {
+input:not([type=checkbox]) {
   font-size: 1rem;
   background: #f3f4f3;
   -moz-appearance: none;
@@ -239,6 +258,15 @@ input {
     clear: both;
     display: table; }
 
+input[type=checkbox] {
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  margin-left: -3px; }
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -251,6 +279,9 @@ input[type=submit] {
   clear: both;
   padding-bottom: 15.38462px;
   line-height: 1; }
+
+input[type=checkbox] {
+  width: auto !important; }
 
 .container {
   padding-left: 20px;
@@ -1387,6 +1418,16 @@ main .flickity-page-dots {
 #contact {
   background: #65cad7;
   color: white; }
+  #contact .btn,
+  #contact button[type=submit] {
+    background: #f8ab41 !important; }
+    #contact .btn:hover,
+    #contact button[type=submit]:hover {
+      background: white !important;
+      color: #65cad7 !important; }
+  #contact .container {
+    max-width: 800px;
+    margin: 0 auto; }
   #contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
     color: white; }
   #contact .row {

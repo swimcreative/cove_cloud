@@ -50,7 +50,21 @@
   }
 }
 
+
+
 #contact {
+  .btn,
+  button[type=submit] {
+    background:$orange !important;
+    &:hover {
+      background:white !important;
+      color:$blue !important;
+    }
+  }
+  .container {
+    max-width:800px;
+    margin:0 auto;
+  }
   @include headings {
     color:white;
   }

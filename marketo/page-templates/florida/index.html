@@ -23,18 +23,28 @@
 <meta property="og:title" content="The perfect setting for happily ever after.">
 <meta property="og:description" content="A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place.">
 <meta property="og:site_name" content="Point Sebago Resort">
-<meta property="og:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/img/slide1.jpg">
+<meta property="og:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/slide1.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:description" content="A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place.">
 <meta name="twitter:title" content="The perfect setting for happily ever after.">
-<meta name="twitter:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/img/slide1.jpg">
+<meta name="twitter:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/slide1.jpg">
 
 <!-- vars -->
 <meta class="mktoString" id="heroBackgroundImage" mktoName="Hero Background Image (URL)" default="" mktoModuleScope="true" >
+<meta class="mktoString" id="landLeaseBg" mktoName="Land Lease Background (URL)" default="" mktoModuleScope="true" >
+<meta class="mktoString" id="contentSideImg" mktoName="Content Side Image (URL)" default="" mktoModuleScope="true" >
 
 <style>
     #hero .carousel-item {
       background-image:url(${heroBackgroundImage}) !important;
+      background-size:cover;
+    }
+    #land-lease {
+      background-image:url(${landLeaseBg}) !important;
+      background-size:cover;
+    }
+    #spec-headline + div {
+      background-image:url(${contentSideImg}) !important;
       background-size:cover;
     }
 </style>
@@ -58,22 +68,22 @@
 <!-- Scripts & Styles -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/js/jquery.youtubebackground.js"></script>
+<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/jquery.youtubebackground.js"></script>
 
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/style.css"
+<link type="text/css" href="style.css"
 rel="stylesheet" media="all">
 
-<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/css/flickity.css"
+<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/css/flickity.css"
 rel="stylesheet" media="all">
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/js/flickity.pkgd.min.js"></script>
+<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/flickity.pkgd.min.js"></script>
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/js/jquery.fitvids.js"></script>
+<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/jquery.fitvids.js"></script>
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/js/main.js"></script>
+<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/main.js"></script>
 
 
 </head>
@@ -83,8 +93,10 @@ rel="stylesheet" media="all">
 
 <header role="banner">
   <div class="container">
-    <a class="brand mktoImg" href="//www.covecommunities.com/" target="_blank" id="logo" mktoName="Main Logo">
-      <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/templates/florida/assets/img/cove-homes.png">
+    <a class="brand" href="//www.covecommunities.com/" target="_blank">
+      <div class="mktoImg" id="logo" mktoName="Main Logo">
+        <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/cove-homes.png">
+      </div>
     </a>
     <a href="#" class="burger">
       <span></span>
@@ -285,9 +297,89 @@ rel="stylesheet" media="all">
           <h2>Contact Us</h2>
         </div>
         <div>
-          <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
-<form id="mktoForm_1076"></form>
-<script>MktoForms2.loadForm("//app-ab32.marketo.com", "373-NCW-798", 1076);</script>
+          <form id="mktoForm_1076" novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutLeft" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 706px;"><style type="text/css">.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        color:#fff;
+        border:1px solid #75ae4c;
+        padding:0.4em 1em;
+        font-size:1em;
+        background-color:#99c47c;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
+        background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
+        background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
+        background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
+        }
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
+        background-color:#75ae4c;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
+        background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
+        background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
+        background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
+        }
+
+        .mktoForm {
+          width:100% !important;
+        }
+        form label {
+          color:white;
+          font-weight:600;
+          margin-bottom:5px;
+          display:block;
+          text-transform:uppercase;
+          width:auto !important;
+        }
+        .mktoForm input:not([type=checkbox]) {
+          width:100% !important;
+        }
+        select {
+          padding:15px;
+          appearance:none !important;
+          -webkit-appearance:none !important;
+          width:100% !important;
+        }
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        border:1px solid #447f19;
+        }
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+        outline:none;
+        border:1px solid #447f19;
+        }
+      form .row .mktoFormRow {
+          width:50%;
+          padding-right:1em;
+        }
+      form .row .mktoFormRow:nth-child(odd)  {
+          padding-right:0;
+          padding-left:1em;
+        }
+        .mktoFormRow:nth-child(odd) {
+          float:right;
+        }
+        .mktoFormRow:nth-child(even) {
+          float:left;
+        }
+        .mktoFormRow:nth-child(5) {
+          width:100%;
+        }
+        .mktoButtonWrap.mktoSimple {
+          margin-left:0 !important;
+          margin-top:10px;
+        }
+        .mktoFormRow:nth-child(n + 8) .mktoFieldDescriptor.mktoFormCol{
+          float:left;
+          width:50% !important;
+        }
+          .mktoFormRow:nth-child(n + 8) label {
+            display:inline-block;
+            float:left;
+          }
+        .mktoHtmlText.mktoHasWidth {
+          width:auto !important;
+          margin-top:20px;
+        }
+
+        </style>
+
+        <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>First Name:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" style="width: 150px;"><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="LastName" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Last Name:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" style="width: 150px;"><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Email" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Email Address:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" style="width: 150px;"><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="Phone" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Phone Number:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Phone" name="Phone" maxlength="255" type="text" class="mktoField mktoTextField mktoInputMask mktoHasWidth" style="width: 150px;"><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset mktoHasWidth" style="width: 10px;"></div><div class="mktoFieldWrap"><div class="mktoHtmlText mktoHasWidth" style="width: 260px;"><h3>Interested in (select all that apply):&nbsp;</h3></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestCommunityName" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Community Name:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="interestCommunityName" name="interestCommunityName" class="mktoField mktoHasWidth" style="width: 150px;"><option value="">Select...</option><option value="Camelot East Village">Camelot East Village (Sarasota, FL)</option><option value="Camelot Lakes Village">Camelot Lakes Village (Sarasota, FL)</option><option value="Holiday RV Village">Holiday RV Village (Leesburg FL)</option><option value="Meadowlea Village">Meadowlea Village (Deland, FL)</option><option value="River Vista RV Village">River Vista RV Village (Ruskin, FL)</option><option value="Rolling Greens Village">Rolling Greens Village (Ocala, FL)</option><option value="Sun Valley">Sun Valley (Tarpon Springs, FL)</option><option value="The Meadows">The Meadows (Tarpon Springs, FL)</option><option value="The Waters">The Waters (Melbourne Beach, FL)</option></select><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestAllAgeCommunity" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>All-Age Community:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestAllAgeCommunity" id="interestAllAgeCommunity" type="checkbox" value="yes" class="mktoField"><label for="interestAllAgeCommunity"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interest55Community" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>55+ Community:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interest55Community" id="interest55Community" type="checkbox" value="yes" class="mktoField"><label for="interest55Community"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interest55RVResort" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>55+ RV Resort:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interest55RVResort" id="interest55RVResort" type="checkbox" value="yes" class="mktoField"><label for="interest55RVResort"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestAllAgeRVResort" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>All-Age RV Resort:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 150px;"><input name="interestAllAgeRVResort" id="interestAllAgeRVResort" type="checkbox" value="yes" class="mktoField"><label for="interestAllAgeRVResort"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestBuyingaHome" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Buying a Home:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestBuyingaHome" id="interestBuyingaHome" type="checkbox" value="yes" class="mktoField"><label for="interestBuyingaHome"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestLongTermRental" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Long Term Rental:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestLongTermRental" id="interestLongTermRental" type="checkbox" value="yes" class="mktoField"><label for="interestLongTermRental"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestShortTermRental" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Short Term Rental:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestShortTermRental" id="interestShortTermRental" type="checkbox" value="yes" class="mktoField"><label for="interestShortTermRental"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestRV" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>RV Site:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestRV" id="interestRV" type="checkbox" value="yes" class="mktoField"><label for="interestRV"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="interestFinance" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Financing Information:</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="interestFinance" id="interestFinance" type="checkbox" value="yes" class="mktoField"><label for="interestFinance"></label></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="ccltutmcampaign" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="ccltutmcontent" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="ccltutmmedium" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="ccltutmsource" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="ccltutmterm" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoButtonRow"><span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button type="submit" class="mktoButton">Submit</button></span></div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1076"><input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="373-NCW-798"></form>
 
         </div>
       </div>
