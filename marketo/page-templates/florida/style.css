@@ -1492,3 +1492,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+#hero .carousel .carousel-item,
+#land-lease,
+#specs .row > div:last-child {
+  background-color: #666; }
