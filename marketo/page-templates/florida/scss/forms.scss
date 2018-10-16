@@ -41,8 +41,13 @@ fieldset li {
   margin-bottom:10px !important;
 }
 
+form label {
+  margin-bottom:5px !important;
+}
+
 select {
   border-radius:0 !important;
+  padding:15px !important;
   background-repeat:no-repeat;
   background-position:right 20px center;
   background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC');
