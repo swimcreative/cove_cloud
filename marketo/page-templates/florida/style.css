@@ -800,9 +800,6 @@ main .flickity-page-dots {
         color: white !important; }
       #hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 {
         color: white; }
-      #hero > * {
-        position: relative;
-        z-index: 999; }
       #hero:before {
         content: '';
         position: absolute;
