@@ -792,27 +792,6 @@ main .flickity-page-dots {
     color: white; }
     #hero h1 small, #hero h2 small, #hero h3 small, #hero h4 small, #hero h5 small, #hero h6 small {
       color: white; }
-  @media (max-width: 1199px) {
-    #hero {
-      position: relative; }
-      #hero,
-      #hero small {
-        color: white !important; }
-      #hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 {
-        color: white; }
-      #hero > * {
-        position: relative;
-        z-index: 999; }
-      #hero:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #000;
-        opacity: 0.4;
-        z-index: 9999; } }
   #hero .row {
     display: block; }
     #hero .row .btn-custom:last-child {
@@ -857,6 +836,7 @@ main .flickity-page-dots {
     #hero .carousel .container > * {
       display: block; }
   #hero .carousel .carousel-item {
+    position: relative;
     padding-top: 25vh;
     padding-bottom: 25vh;
     background-size: cover;
@@ -866,7 +846,38 @@ main .flickity-page-dots {
     width: 100%; }
     #hero .carousel .carousel-item .container {
       position: relative;
-      z-index: 999; }
+      z-index: 99999; }
+    #hero .carousel .carousel-item:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #000;
+      opacity: 0.2;
+      z-index: 9999; }
+    @media (max-width: 1199px) {
+      #hero .carousel .carousel-item {
+        position: relative; }
+        #hero .carousel .carousel-item,
+        #hero .carousel .carousel-item small {
+          color: white !important; }
+        #hero .carousel .carousel-item h1, #hero .carousel .carousel-item h2, #hero .carousel .carousel-item h3, #hero .carousel .carousel-item h4, #hero .carousel .carousel-item h5, #hero .carousel .carousel-item h6 {
+          color: white; }
+        #hero .carousel .carousel-item .container {
+          position: relative;
+          z-index: 99999; }
+        #hero .carousel .carousel-item:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #000;
+          opacity: 0.4;
+          z-index: 9999; } }
     @media (max-width: 767px) {
       #hero .carousel .carousel-item {
         padding-top: 13.88889vh;

@@ -8,16 +8,6 @@
       color:white;
     }
   }
-  @media (max-width:$desktop-down) {
-    &,
-    small {
-      color:white !important;
-    }
-    @include headings {
-      color:white;
-    }
-    @include overlay(.4);
-  }
   //@include overlay(.3);
   //@extend %text-shadow;
 //  background-attachment:fixed;
@@ -73,9 +63,16 @@
       }
     }
     .carousel-item {
-      .container {
-        position:relative;
-        z-index:999;
+      @include overlay(.2);
+      @media (max-width:$desktop-down) {
+        &,
+        small {
+          color:white !important;
+        }
+        @include headings {
+          color:white;
+        }
+        @include overlay(.4);
       }
       @include pad($hero);
     //  background-image:url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide1.jpg);
@@ -92,6 +89,8 @@
     }
   }
 }
+
+
 
 img.object-fit {
     display:flex;

@@ -77,9 +77,9 @@ $base: 20px;
 // OVERLAY
 @mixin overlay($opac: .4) {
   position:relative;
-  > * {
+  .container {
     position:relative;
-    z-index:999;
+    z-index:99999;
   }
   &:before {
     content:'';
