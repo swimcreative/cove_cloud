@@ -784,8 +784,6 @@ main .flickity-page-dots {
       opacity: 1; }
 
 #hero {
-  background-size: cover;
-  background-position: center center;
   padding: 0;
   background-color: #004f5d;
   background-position: 86% center;
@@ -813,7 +811,8 @@ main .flickity-page-dots {
         left: 0;
         right: 0;
         background: #000;
-        opacity: 0.4; } }
+        opacity: 0.4;
+        z-index: 9999; } }
   #hero .row {
     display: block; }
     #hero .row .btn-custom:last-child {
@@ -860,21 +859,37 @@ main .flickity-page-dots {
   #hero .carousel .carousel-item {
     padding-top: 25vh;
     padding-bottom: 25vh;
-    background-image: url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide1.jpg);
     background-size: cover;
     background-position: center center;
     height: 100%;
     background-color: #282829;
     width: 100%; }
+    #hero .carousel .carousel-item div {
+      position: relative;
+      z-index: 999; }
     @media (max-width: 767px) {
       #hero .carousel .carousel-item {
         padding-top: 13.88889vh;
         padding-bottom: 13.88889vh; } }
-    #hero .carousel .carousel-item:nth-child(2) {
-      background-image: url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide2.jpg); }
     @media (max-width: 767px) {
       #hero .carousel .carousel-item {
         background-position: 80% center; } }
+
+img.object-fit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; }
 
 #intro {
   background-size: cover;
@@ -1455,6 +1470,8 @@ main .flickity-page-dots {
       padding-top: 83.33333px;
       padding-bottom: 83.33333px; } }
   #land-lease .row {
+    position: relative;
+    z-index: 999;
     width: 100%;
     max-width: 100%;
     -ms-flex-preferred-size: 100%;

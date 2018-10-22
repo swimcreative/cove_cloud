@@ -1,5 +1,5 @@
 #hero {
-  @include cover;
+  //@include cover;
   padding:0;
   background-color:$dark-blue;
   @include headings {
@@ -73,10 +73,14 @@
       }
     }
     .carousel-item {
+      div {
+        position:relative;
+        z-index:999;
+      }
       @include pad($hero);
-      background-image:url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide1.jpg);
+    //  background-image:url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide1.jpg);
       &:nth-child(2) {
-        background-image:url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide2.jpg);
+      //  background-image:url(http://designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/slide2.jpg);
       }
       @include cover;
       @media (max-width:$tablet-down) {
@@ -87,4 +91,17 @@
       width:100%;
     }
   }
+}
+
+img.object-fit {
+    display:flex;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
 }
