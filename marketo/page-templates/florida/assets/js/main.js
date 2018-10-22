@@ -261,13 +261,13 @@ jQuery(function($) {
 
   $(document).ready(function() {
 
-    cove.carousel();
+    //cove.carousel();
     cove.smoothScroll();
     cove.menuToggle();
-    cove.fitVids();
+    //cove.fitVids();
     //cove.parallax();
     //cove.menuHighlight();
-    cove.bgVideo();
+    //cove.bgVideo();
     cove.headPad();
     cove.shadow();
     //cove.parallax();
@@ -282,7 +282,7 @@ jQuery(function($) {
 
   $(window).resize(function() {
     //cove.parallax();
-    cove.fitVids();
+    //cove.fitVids();
     cove.headPad();
     $('.carousel').flickity('resize');
 

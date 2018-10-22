@@ -4,73 +4,68 @@
 <head>
 
 <meta charset="utf-8">
-<title>Canada Homes | Cove Communities</title>
+
+<title>Cove Homes | Cove Communities</title>
 
 <meta name="description" content="A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place.">
 
 <!-- Mobile-friendly viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+<!-- fonts -->
 <link rel="stylesheet" href="https://use.typekit.net/iqr7viu.css">
-
-
-
-<!-- social media URLS -->
-
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="The perfect setting for happily ever after.">
-<meta property="og:description" content="A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place.">
-<meta property="og:site_name" content="Point Sebago Resort">
-<meta property="og:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/slide1.jpg">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place.">
-<meta name="twitter:title" content="The perfect setting for happily ever after.">
-<meta name="twitter:image" content="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/slide1.jpg">
-
-
-
-<!-- Global site tag (gtag.js) - Google AdWords: 817422534 -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-817422534"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag()
-  {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'AW-817422534');
-</script>
 
 
 <!-- Scripts & Styles -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/jquery.youtubebackground.js"></script>
-
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/style.css"
+<link type="text/css" href="https://rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/style.css"
 rel="stylesheet" media="all">
 
-<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/css/flickity.css"
-rel="stylesheet" media="all">
+<script src="assets/js/main.js"></script>
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/flickity.pkgd.min.js"></script>
+<!-- meta vars -->
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/jquery.fitvids.js"></script>
+<meta class="mktoBoolean" id="showHero" mktoName="Show Hero" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection5" mktoName="Show Section 5" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
+<meta class="mktoBoolean" id="showSection6" mktoName="Show Section 6" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
 
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/main.js"></script>
+<style>
 
+#hero {
+  display:${showHero};
+}
+#intro {
+  display:${showSection1};
+}
+#mod {
+  display:${showSection2};
+}
+#land-lease {
+  display:${showSection3};
+}
+#rethink {
+  display:${showSection4};
+}
+#specs {
+  display:${showSection5};
+}
+#contact {
+  display:${showSection6};
+}
+
+
+</style>
 
 </head>
 
 <body>
-
 
 <header role="banner">
   <div class="container">
@@ -408,7 +403,7 @@ rel="stylesheet" media="all">
           <li class="current"><a target="_blank" href="https://www.covecommunities.com/our-communities/"
             class="">Our Communities</a></li>
           <li><a target="_blank" href="https://www.covecommunities.com/about-us/" class="">About Us</a></li>
-          <li><a href="#contact" class="">Contact Us</a></li>
+          <li><a target="_blank" href="https://www.covecommunities.com/#colophon" class="">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -417,71 +412,6 @@ rel="stylesheet" media="all">
 </footer>
 
 <!-- end splash page -->
-
-<!-- Lightbox for video -->
-<div class="lightbox" style="display:none">
-  <a target="_blank" href="#" class="close">
-    <span></span>
-    <span></span>
-  </a>
-  <div class="video-box">
-  </div>
-</div>
-
-
-<!-- misc scripts -->
-
-<script>
-  var $ = jQuery;
-
-  $(document).ready(function()
-  {
-
-
-
-    if (/MSIE 10/i.test(navigator.userAgent))
-    {
-      // This is internet explorer 10
-      $('body').addClass("ie");
-    }
-
-    if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent))
-    {
-      // This is internet explorer 9 or 11
-      $('body').addClass('ie')
-    }
-
-    if (/Edge\/\d./i.test(navigator.userAgent))
-    {
-      // This is Microsoft Edge
-      $('body').addClass("ie");
-    }
-
-
-    // TRACKING EVENTS
-
-    $('a[href*="1036"]').on('click', function()
-    {
-      ga('send', 'event', 'link', 'click', 'Phone Number');
-      //console.log('yep');
-    });
-
-    $('a[href*="reservation-request"]').on('click', function()
-    {
-      ga('send', 'event', 'link', 'click', 'Book Reservation Button');
-      //console.log('yep');
-    });
-
-
-  });
-</script>
-
-
-<!-- Segment Pixel - Canada Landing Page - DO NOT MODIFY -->
-<img style="visibility:hidden;height:0;margin-top:-30px;" src="http://ib.adnxs.com/seg?add=13521313&ampt=2" width="1" height="1" />
-<!-- End of Segment Pixel -->
-
-
 
 
 </body>

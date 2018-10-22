@@ -330,7 +330,7 @@ header {
   transition: box-shadow .2s, -webkit-box-shadow .2s;
   position: fixed;
   width: 100%;
-  z-index: 99999;
+  z-index: 999999;
   background: white;
   font-family: "museo-sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   header .burger {
@@ -1179,7 +1179,6 @@ img.object-fit {
         padding-right: 4%; } }
     #specs .row > div:last-child {
       background-color: #282829;
-      background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/kitchen.jpg);
       background-size: cover;
       background-position: center center;
       background-position: right center;
@@ -1394,7 +1393,7 @@ img.object-fit {
 
 #contact-top {
   padding: 80px 0;
-  background: #65cad7;
+  background: #f8ab41;
   color: white; }
   #contact-top span {
     color: white; }
@@ -1471,7 +1470,6 @@ img.object-fit {
 #land-lease {
   padding-top: 150px;
   padding-bottom: 150px;
-  background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/cove-house.jpg);
   background-size: cover;
   background-position: center center; }
   #land-lease .btn-custom {
