@@ -886,7 +886,10 @@ main .flickity-page-dots {
       #hero .carousel .carousel-item {
         background-position: 80% center; } }
 
-img.object-fit {
+img.object-fit,
+#hero .mktoImg img,
+#land-lease .mktoImg img,
+#specs .mktoImg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -90,9 +90,10 @@
   }
 }
 
-
-
-img.object-fit {
+img.object-fit,
+#hero .mktoImg img,
+#land-lease .mktoImg img,
+#specs .mktoImg img {
     display:flex;
     width:100%;
     height:100%;
