@@ -36,7 +36,7 @@ footer {
       a {
         color:$dark-gray;
         &:hover {
-          color:$green;
+          color:$orange;
         }
       }
     }
@@ -57,7 +57,7 @@ footer {
           font-weight:500;
           color:$dark-gray;
           &:hover {
-            color:$green;
+            color:$orange;
             }
           }
         }
@@ -66,8 +66,8 @@ footer {
     .btn-custom {
       font-size:14px;
       background:none;
-      border:1px solid $green;
-      color:$green;
+      border:1px solid $orange;
+      color:$orange;
       font-weight:400;
       padding:$base / 1.25;
       &:hover {
@@ -95,11 +95,11 @@ footer .btn-custom:hover {
     a {
       font-size:20px;
       text-align:center;
-      color:$green;
+      color:$orange;
       padding:10px 15px;
       min-width:48px;
       display:inline-block;
-      border:1px solid $green;
+      border:1px solid $orange;
       &:hover {
         color:White;
         background:$orange;
