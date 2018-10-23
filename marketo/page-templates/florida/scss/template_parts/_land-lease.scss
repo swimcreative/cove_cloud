@@ -8,7 +8,7 @@
   .row {
     position:relative;
     z-index:999;
-    h2 {
+    h2:first-of-type {
       @include border_accent;
       margin-bottom:.7em;
       padding-bottom:.7em;

@@ -1487,13 +1487,13 @@ img.object-fit {
     max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
-    #land-lease .row h2 {
+    #land-lease .row h2:first-of-type {
       position: relative;
       margin-bottom: 6em;
       display: inline-block;
       margin-bottom: .7em;
       padding-bottom: .7em; }
-      #land-lease .row h2:after {
+      #land-lease .row h2:first-of-type:after {
         position: absolute;
         left: 0;
         bottom: -3em;
@@ -1501,7 +1501,7 @@ img.object-fit {
         height: 2px;
         width: 100px;
         background: #41a85f; }
-      #land-lease .row h2:after {
+      #land-lease .row h2:first-of-type:after {
         bottom: 0em; }
     @media (min-width: 768px) {
       #land-lease .row > div {
