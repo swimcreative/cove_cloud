@@ -113,7 +113,7 @@ jQuery(function($) {
   cove.smoothScroll = function() {
 
     var height = $('header').outerHeight(),
-        link = $('a[href*="#"]:not(.burger)');
+        link = $('a[href^="#"]:not(.burger)');
 
     link.on('click', function(e) {
       e.preventDefault();
