@@ -318,7 +318,7 @@ main section {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      .row > div {
+      .row > div:not(.mktoText) {
         padding-top: 20px;
         padding-bottom: 20px; } }
 
