@@ -1,0 +1,193 @@
+#specs {
+  background-color:$dark-blue;
+  //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-gray.jpg);
+  background-size:60%;
+  color:white;
+  .container {
+    position:static;
+  }
+  @include headings {
+    color:white;
+  }
+  @media (min-width:$desktop-up) {
+    @include pad($large);
+  }
+  @include pad;
+  @media (max-width:$tablet-down) {
+    //padding-top:1.5em;
+  }
+  @media (max-width:$desktop-down) {
+
+    .flickity-prev-next-button {
+      display:none;
+    }
+    padding-bottom:0;
+    .container {
+      padding:0;
+    }
+    .row > div:first-child {
+      padding-left:$base;
+      padding-righT:$base;
+    }
+  }
+  .row {
+    > div:first-child {
+      h2 {
+        max-width:250px;
+        //border-bottom:2px solid $light-blue;
+        padding-bottom:.75em;
+        margin-bottom:.75em;
+      }
+      .btn-custom {
+        backgrounD:$light-blue;
+        &:hover {
+          background:$orange;
+        }
+        margin-top:1.5em;
+        margin-bottom:$base * 2;
+        @media (max-width:$desktop-down) {
+          margin-bottom:6vh;
+        }
+        @media (min-width:$tablet-up) and (max-width:$desktop-down) {
+          margin-bottom:100px;
+        }
+        margin-bottom:0;
+      }
+    }
+  @include two_one;
+   > div:last-child {
+    //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-1///designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/hero.jpg);
+    background-color:darken($dark-gray, 25%);
+    //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/kitchen.jpg);
+    @include cover;
+    background-position:right center;
+    @media (min-width:$desktop-up) {
+    position:absolute;
+    top:0;
+    text-align:right;
+    bottom:0;
+    left:45%;
+    width:55%;
+    }
+    position:relative;
+    @media (min-width:$desktop-up) {
+      width:calc(50% + 150px);
+      left:50%;
+      margin-left:-150px;
+      padding-left:$base;
+      }
+    }
+    @media (max-width:$desktop-down) {
+      flex-direction:column;
+      width:100%;
+      > div {
+        &:last-child {
+          min-height:70vw;
+        }
+        width:100% !important;
+        max-width:100% !important;
+        //flex-basis:100% !important;
+        &:first-child {
+          @media (min-width:$tablet-up) and (max-width:$desktop-down) {
+        //   margin-bottom:60px;
+           //margin-bottom:14vh;
+          }
+        }
+      }
+    }
+    .carousel {
+      > .flickity-viewport {
+        height:100% !important;
+        @media (max-width:$desktop-down) and (min-width:$tablet-up) {
+        bottom:100px;
+        }
+      }
+      .flickity-page-dots {
+        @media (min-width:$desktop-up) {
+          display:none;
+        }
+        bottom:2em;
+      }
+      @include abs;
+      .carousel-item {
+        //margin:0 2em;
+        @include cover;
+        background-position:right center;
+        //border:10px solid white;
+        @include abs;
+        width:100%;
+      }
+    }
+  }
+  .flickity-viewport {
+    width:100% !important;
+  }
+  .carousel-nav {
+    .flickity-page-dots {
+      display:none;
+    }
+    padding:0;
+    margin:0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    z-index:9999;
+    flex-direction:row;
+    justify-content:space-between;
+    overflow:auto;
+    flex-wrap:wrap;
+    bottom:-100px;
+    @media (max-width:$desktop-down) {
+      bottom:0 !important;
+    }
+    @media (max-width:$tablet-down) {
+      display:none;
+    }
+    .item {
+      list-style-type:none !important;
+      &.is-nav-selected {
+        a {
+          opacity:.8;
+        }
+        &:after {
+          content:'';
+          position:absolute;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          border:5px solid $blue;
+        }
+      }
+      @media (max-width:$tablet-down) {
+        width:50%;
+        max-width:50%;
+        bottom:0;
+        //display:none;
+        flex-basis:50%;
+      }
+      background:white;
+      margin:0;
+      width:calc(100% / 6);
+      flex-basis:calc(100% / 6);
+      max-width:calc(100% / 6);
+      list-style-type:none;
+      a {
+        transition:opacity .2s;
+        &:hover {
+          opacity:.8;
+        }
+        width:100%;
+        background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-1///designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/house.jpg);
+        @include cover;
+        background-position:right center;
+        display:block;
+        min-height:100px;
+        height:6vw;
+      //  height:8vw;
+      }
+    }
+  }
+}
