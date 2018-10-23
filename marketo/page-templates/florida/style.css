@@ -1161,12 +1161,12 @@ img.object-fit,
       padding-bottom: .75em;
       margin-bottom: .75em; }
     #specs .row > div:first-child .btn-custom {
-      backgrounD: #f8ab41;
+      backgrounD: #65cad7;
       margin-top: 1.5em;
       margin-bottom: 40px;
       margin-bottom: 0; }
       #specs .row > div:first-child .btn-custom:hover {
-        background: #65cad7; }
+        background: #f8ab41; }
       @media (max-width: 1199px) {
         #specs .row > div:first-child .btn-custom {
           margin-bottom: 6vh; } }
@@ -1447,7 +1447,7 @@ img.object-fit,
   #contact-top a {
     color: white; }
     #contact-top a:hover {
-      color: #f8ab41; }
+      opacity: .8; }
 
 #contact {
   background: #65cad7;

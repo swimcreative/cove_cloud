@@ -45,7 +45,8 @@
     a {
     color:white;
     &:hover {
-      color:$orange;
+      //color:$orange;
+      opacity:.8;
     }
   }
 }
