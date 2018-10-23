@@ -905,14 +905,14 @@ img.object-fit {
 #intro {
   background-size: cover;
   background-position: center center; }
-  #intro h2 {
+  #intro h2:first-of-type {
     font-size: 2.5rem;
     max-width: 300px;
     position: relative;
     margin-bottom: 6em;
     display: inline-block;
     margin-bottom: -.2em; }
-    #intro h2:after {
+    #intro h2:first-of-type:after {
       position: absolute;
       left: 0;
       bottom: -3em;
@@ -920,10 +920,10 @@ img.object-fit {
       height: 2px;
       width: 100px;
       background: #41a85f; }
-    #intro h2:after {
+    #intro h2:first-of-type:after {
       bottom: -1.5em; }
       @media (max-width: 767px) {
-        #intro h2:after {
+        #intro h2:first-of-type:after {
           bottom: -.8em; } }
   #intro .row {
     width: 100%;
@@ -1315,12 +1315,12 @@ img.object-fit {
   color: white; }
   #mod .row {
     position: relative; }
-  #mod h2 {
+  #mod h2:first-of-type {
     position: relative;
     margin-bottom: 6em;
     display: inline-block;
     margin-bottom: .8em; }
-    #mod h2:after {
+    #mod h2:first-of-type:after {
       position: absolute;
       left: 0;
       bottom: -3em;
@@ -1328,16 +1328,18 @@ img.object-fit {
       height: 2px;
       width: 100px;
       background: #41a85f; }
-    #mod h2:after {
+    #mod h2:first-of-type:after {
+      background: White; }
+    #mod h2:first-of-type:after {
       bottom: -1.5em; }
       @media (max-width: 767px) {
-        #mod h2:after {
+        #mod h2:first-of-type:after {
           bottom: -.8em; } }
   #mod .btn-custom {
     margin-top: 5em;
-    background: #41a85f; }
+    background: #f8ab41; }
     #mod .btn-custom:hover {
-      background: #f8ab41 !important; }
+      background: #004f5d !important; }
     @media (max-width: 767px) {
       #mod .btn-custom {
         margin-top: 2em;

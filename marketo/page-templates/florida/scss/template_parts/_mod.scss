@@ -4,8 +4,11 @@
   .row {
     position:relative;
   }
-  h2 {
+   h2:first-of-type {
     @include border_accent;
+    &:after {
+      background:White;
+    }
     margin-bottom:.8em;
     &:after {
       bottom:-1.5em;
@@ -16,9 +19,9 @@
   }
   .btn-custom {
     margin-top:5em;
-    background:$green;
+    background:$orange;
     &:hover {
-      background:$orange !important;
+      background:$dark-blue !important;
     }
     @media (max-width:$tablet-down) {
       margin-top:2em;

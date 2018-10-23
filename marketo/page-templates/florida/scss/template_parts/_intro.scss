@@ -3,7 +3,7 @@
   //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-1///designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan.jpg);
   @include cover;
 
-  h2 {
+  h2:first-of-type {
     font-size:2.5rem;
     max-width:300px;
     @include border_accent;

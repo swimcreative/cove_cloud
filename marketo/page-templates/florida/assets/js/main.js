@@ -284,7 +284,7 @@ jQuery(function($) {
     //cove.parallax();
     //cove.fitVids();
     cove.headPad();
-    $('.carousel').flickity('resize');
+    //$('.carousel').flickity('resize');
 
   });
 
