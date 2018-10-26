@@ -94,7 +94,8 @@ fieldset {
   border:none;
 }
 
-input[type=submit] {
+input[type=submit],
+button[type=submit] {
   width:auto;
   color:white !important;
   clear:both;

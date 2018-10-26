@@ -264,7 +264,8 @@ fieldset {
   clear: none;
   border: none; }
 
-input[type=submit] {
+input[type=submit],
+button[type=submit] {
   width: auto;
   color: white !important;
   clear: both;
@@ -274,7 +275,8 @@ input[type=submit] {
   font-size: 1.4em;
   background: #65cad7 !important;
   border: none; }
-  input[type=submit]:hover {
+  input[type=submit]:hover,
+  button[type=submit]:hover {
     background: #f8ab41 !important; }
 
 input[type=checkbox] {
