@@ -1,0 +1,243 @@
+// nav
+
+header {
+  transition:box-shadow .2s;
+  position:fixed;
+  width:100%;
+  z-index:999999;
+  background:white;
+  font-family:$sys;
+  .burger {
+    display:none;
+    @media (max-width:$tablet-down) {
+      display:flex;
+      flex-direction:column;
+      margin-left:auto;
+      float:right;
+    }
+  }
+  //border-bottom:1px solid #ccc;
+  > .container {
+    width:100%;
+    //max-width:100%;
+    @media (max-width:$tablet-down) {
+      .burger {
+        align-self:center;
+      }
+      .brand {
+        img {
+          align-self:center;
+          display:flex;
+        }
+      }
+      flex-wrap:wrap;
+      nav {
+        display:none;
+        width:100%;
+      }
+    }
+    @media (min-width:$tablet-up) {
+      nav {
+        display:flex !important;
+      }
+      padding-right:0;
+
+    .brand {
+      //border-right:1px solid #ccc;
+      display:flex;
+      align-self: center;
+      &:hover img {
+        opacity:.8;
+      }
+      img {
+        align-self: center;
+        max-height: 160px;
+        padding: 18px 0;
+        display:flex;
+        height:auto;
+        display:flex;
+        }
+      }
+    }
+    @media (min-width:$tablet-up) {
+    display:flex;
+    align-items:center;
+    nav {
+      flex:2;
+      display:flex;
+      align-self:stretch;
+    ul {
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-around;
+      margin:0;
+      width:100%;
+      max-width:$md;
+      padding-left:0;
+      margin-left:auto;
+      li {
+        margin:0;
+        display:flex;
+        align-self:stretch;
+        align-items:center;
+        a {
+          @media (max-width:$desktop-down) and (min-width:$tablet-up) {
+            font-size:14px;
+          }
+          padding:0 15px;
+          display:flex;
+          align-self:stretch;
+          align-items:center;
+          color:$dark-gray !important;
+          &:hover {
+            color:$green !important;
+          }
+        }
+        }
+      }
+    }
+    .header-book {
+      margin:0;
+      display:flex;
+      font-weight:600;
+      text-transform:uppercase;
+      align-self:stretch;
+      justify-content:center;
+      flex-direction:column;
+      @media (min-width:$desktop-up) {
+        min-width:300px;
+        }
+      }
+    }
+  }
+  .container {
+    display:flex;
+  }
+  .brand {
+    display:flex;
+    @media (max-width:$tablet-down) {
+      padding:20px 0;
+      max-width:170px;
+    }
+  }
+  .header-book {
+    display:none !important;
+    position:relative;
+    &:hover {
+      background:$orange !important;
+      opacity:.8;
+    }
+    &:hover .overlay {
+      right:0;
+    }
+    span:last-child {
+      position:relative;
+      z-index:9999;
+    }
+    .overlay {
+      transitioN:right .2s;
+      background:$blue;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:100%;
+    }
+    @media (max-width:$tablet-down) {
+      width:100%;
+    }
+  }
+  ul {
+    padding:0;
+    li {
+      list-style-type:none;
+      a {
+        font-size:.8rem;
+        font-weight:600;
+        text-transform:uppercase;
+      }
+    }
+  }
+  @media (max-width:$tablet-down) {
+    nav {
+      ul {
+        li {
+          a {
+            padding:7px 0;
+            display:block;
+            font-size:1rem;
+            font-weight:400;
+            color:$dark-gray;
+          }
+        }
+      }
+      .btn-custom {
+        margin-bottom:1em;
+      }
+    }
+  }
+}
+
+.burger,
+.close {
+  transition:none !important;
+  padding:20px 0;
+  position:relative;
+  top:-1px;
+  //transition:all .3s;
+  span {
+    position:relative;
+    top:0;
+    bottom:0;
+    //transitioN:all .3s;
+    &:first-child {
+      margin-top:0;
+    }
+    display:block;
+    height:2px;
+    background:$dark-gray;
+    margin:4px 0;
+    &:last-child {
+      margin-bottom:0;
+    }
+    width:42px;
+  }
+  &.toggled,
+  &.close {
+    z-index:999999;
+    top:-11px;
+    &:not(.close) {
+    span:nth-last-child(2) {
+      opacity:0;
+      }
+    }
+    span:first-child {
+      transform:rotate(45deg);
+      top:20px;
+
+    }
+    span:last-child {
+      transform:rotate(-45deg);
+      bottom:-23px;
+
+    }
+    &.close {
+      padding:11px;
+      margin-right:-11px;
+      margin-top:40px;
+      span:first-child {
+        transform:rotate(45deg);
+        top:11px;
+      }
+      span:last-child {
+        transform:rotate(-45deg);
+        bottom:-11px;
+      }
+    }
+  }
+}
+
+.shadow {
+  box-shadow:0px 0px 15px rgba(0,0,0,.3);
+}

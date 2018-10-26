@@ -1,0 +1,40 @@
+#specs {
+  //background-color:$dark-blue;
+  //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-gray.jpg);
+  background-size:60%;
+  //color:white;
+  .container {
+    position:static;
+  }
+  .row {
+    small {
+      display:block;
+      font-size:.8rem;
+      line-height:1.1;
+      color:#6c6c6c;
+    }
+    .btn-custom {
+      margin-bottom:1.5em;
+    }
+    align-items:flex-start;
+    margin-left:-2em;
+    margin-right:-2em;
+    .column {
+      img {
+        max-width:300px;
+        width:100%;
+      }
+      padding-left:2em;
+      padding-right:2em;
+      @media (min-width:$tablet-up) {
+      width:33%;
+      max-width:33%;
+      flex-basis:33%;
+      }
+    }
+  }
+  @include headings {
+    //color:white;
+
+  }
+}
