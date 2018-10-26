@@ -49,7 +49,7 @@
     }
   @include two_one;
    > div:last-child {
-    //background-image:url(assets/img/hero.jpg);
+    //background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/hero.jpg);
     background:darken($dark-gray, 25%);
     @include cover;
     background-position:right center;
@@ -114,29 +114,29 @@
           }
         }
         //margin:0 2em;
-        background-image:url(assets/img/house.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/house.jpg);
         @include cover;
         background-position:right center;
         //border:10px solid white;
         @include abs;
         width:100%;
         &:first-child {
-          background-image:url(assets/img/gold.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/gold.jpg);
         }
         &:nth-child(2) {
-          background-image:url(assets/img/silver.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/silver.jpg);
         }
         &:nth-child(3) {
-          background-image:url(assets/img/northwood.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/northwood.jpg);
         }
         &:nth-child(4) {
-          background-image:url(assets/img/example1.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example1.jpg);
         }
         &:nth-child(5) {
-          background-image:url(assets/img/example2.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example2.jpg);
         }
         &:nth-child(6) {
-          background-image:url(assets/img/example3.jpg);
+          background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example3.jpg);
         }
       }
     }
@@ -203,7 +203,7 @@
           opacity:.8;
         }
         width:100%;
-        //background-image:url(assets/img/house.jpg);
+        //background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/house.jpg);
         @include cover;
         background-position:right center;
         display:block;
@@ -212,22 +212,22 @@
       //  height:8vw;
       }
       &:first-child a {
-        background-image:url(assets/img/gold.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/gold.jpg);
       }
       &:nth-child(2) a {
-        background-image:url(assets/img/silver.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/silver.jpg);
       }
       &:nth-child(3) a {
-        background-image:url(assets/img/northwood.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/northwood.jpg);
       }
       &:nth-child(4) a {
-        background-image:url(assets/img/example1.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example1.jpg);
       }
       &:nth-child(5) a {
-        background-image:url(assets/img/example2.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example2.jpg);
       }
       &:nth-child(6) a {
-        background-image:url(assets/img/example3.jpg);
+        background-image:url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example3.jpg);
       }
     }
   }

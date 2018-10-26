@@ -742,7 +742,7 @@ main .flickity-page-dots {
       opacity: 1; }
 
 #hero {
-  background-image: url(assets/img/hero.jpg);
+  background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/hero.jpg);
   background-size: cover;
   background-position: center center;
   padding-top: 10vw;
@@ -804,7 +804,7 @@ main .flickity-page-dots {
 
 #intro {
   background-color: #485935;
-  background-image: url(assets/img/floorplan.jpg);
+  background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/floorplan.jpg);
   background-size: cover;
   background-position: center center;
   color: white; }
@@ -1098,7 +1098,7 @@ main .flickity-page-dots {
           #specs .row .carousel .flickity-page-dots {
             display: none; } }
       #specs .row .carousel .carousel-item {
-        background-image: url(assets/img/house.jpg);
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/house.jpg);
         background-size: cover;
         background-position: center center;
         background-position: right center;
@@ -1120,17 +1120,17 @@ main .flickity-page-dots {
               bottom: auto;
               top: 20px; } }
         #specs .row .carousel .carousel-item:first-child {
-          background-image: url(assets/img/gold.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/gold.jpg); }
         #specs .row .carousel .carousel-item:nth-child(2) {
-          background-image: url(assets/img/silver.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/silver.jpg); }
         #specs .row .carousel .carousel-item:nth-child(3) {
-          background-image: url(assets/img/northwood.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/northwood.jpg); }
         #specs .row .carousel .carousel-item:nth-child(4) {
-          background-image: url(assets/img/example1.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example1.jpg); }
         #specs .row .carousel .carousel-item:nth-child(5) {
-          background-image: url(assets/img/example2.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example2.jpg); }
         #specs .row .carousel .carousel-item:nth-child(6) {
-          background-image: url(assets/img/example3.jpg); }
+          background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example3.jpg); }
   #specs .flickity-viewport {
     width: 100% !important; }
   #specs .carousel-nav {
@@ -1204,17 +1204,17 @@ main .flickity-page-dots {
         #specs .carousel-nav .item a:hover {
           opacity: .8; }
       #specs .carousel-nav .item:first-child a {
-        background-image: url(assets/img/gold.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/gold.jpg); }
       #specs .carousel-nav .item:nth-child(2) a {
-        background-image: url(assets/img/silver.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/silver.jpg); }
       #specs .carousel-nav .item:nth-child(3) a {
-        background-image: url(assets/img/northwood.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/northwood.jpg); }
       #specs .carousel-nav .item:nth-child(4) a {
-        background-image: url(assets/img/example1.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example1.jpg); }
       #specs .carousel-nav .item:nth-child(5) a {
-        background-image: url(assets/img/example2.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example2.jpg); }
       #specs .carousel-nav .item:nth-child(6) a {
-        background-image: url(assets/img/example3.jpg); }
+        background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/example3.jpg); }
 
 #mod {
   background: #f3efdf; }
@@ -1245,7 +1245,7 @@ main .flickity-page-dots {
       order: 2;
       min-height: 70vw;
       width: 100%;
-      background: url(assets/img/couple-lounge.jpg);
+      background: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-1/assets/img/couple-lounge.jpg);
       background-size: cover;
       background-position: center center; }
       @media (min-width: 768px) {
