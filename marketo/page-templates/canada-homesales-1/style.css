@@ -269,7 +269,13 @@ input[type=submit] {
   color: white !important;
   clear: both;
   padding-bottom: 15.38462px;
-  line-height: 1; }
+  line-height: 1;
+  padding: 16px !important;
+  font-size: 1.4em;
+  background: #65cad7 !important;
+  border: none; }
+  input[type=submit]:hover {
+    background: #f8ab41 !important; }
 
 input[type=checkbox] {
   width: auto !important; }

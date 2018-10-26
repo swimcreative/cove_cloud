@@ -100,6 +100,13 @@ input[type=submit] {
   clear:both;
   padding-bottom:$base / 1.3;
   line-height:1;
+  padding:16px !important;
+  font-size:1.4em;
+  background:#65cad7 !important;
+  border:none;
+  &:hover {
+    background:$orange !important;
+  }
 }
 
 input[type=checkbox] {
