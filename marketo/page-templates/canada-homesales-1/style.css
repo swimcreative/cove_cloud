@@ -272,9 +272,9 @@ button[type=submit] {
   padding-bottom: 15.38462px;
   line-height: 1;
   padding: 16px !important;
-  font-size: 1.4em;
+  font-size: 1.4em !important;
   background: #65cad7 !important;
-  border: none; }
+  border: none !important; }
   input[type=submit]:hover,
   button[type=submit]:hover {
     background: #f8ab41 !important; }
