@@ -1,0 +1,61 @@
+#intro {
+  background-color:$dark-green;
+  background-image:url(assets/img/floorplan.jpg);
+  @include cover;
+  color:white;
+  .row {
+    .btn-custom {
+      @media (max-width:$tablet-down) {
+        margin-bottom:3em;
+      }
+    }
+    em {
+      font-size:1.25rem;
+    }
+    > div:first-child {
+      @include headings {
+        color:white;
+      }
+      em {
+        @include border_accent;
+      }
+    }
+    @include one_two;
+    align-items:flex-start;
+    div:last-child {
+      strong {
+        font-family:$sys;
+        font-size:.8rem;
+      }
+      @media (max-width:$tablet-down) {
+        @include pad;
+        padding-bottom:0 !important;
+        br {
+          display:none;
+        }
+      }
+      color:$dark-gray;
+      position:relative;
+      > * {
+        position:relative;
+        z-index:99;
+      }
+      &:after {
+        content:'';
+        position:absolute;
+        top:-50vh;
+        bottom:-50vh;
+        left:40px;
+        width:100vw;
+        background:#e9e4cd;
+        z-index:1;
+        @media (max-width:$tablet-down) {
+          top:0;
+          bottom:-50vh;
+          left:-20vw;
+          width:120vw;
+        }
+      }
+    }
+  }
+}

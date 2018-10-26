@@ -1,0 +1,59 @@
+#rethink {
+  background:$light-tan;
+  .row:first-child {
+    em {
+      font-size:1.3rem;
+    }
+    border-bottom:2px solid $light-blue;
+    @include two_one;
+    @media (max-width:$tablet-down) {
+      align-items:flex-start;
+      > div {
+       //padding:3vh 0;
+     }
+    }
+    align-items:flex-end;
+    div:first-child {
+      @media (max-width:$tablet-down) {
+        br {
+          display:none;
+        }
+      }
+      > * {
+        margin:0;
+      }
+    }
+  }
+  .row:nth-last-child(2) {
+    @include even_columns(3,3,2, 30px);
+    @media (max-width:$tablet-down) {
+      .item {
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+    }
+  }
+  .row {
+    &:first-child {
+      h3 {
+        font-size:2.5rem;
+      }
+      padding-bottom:$base * 3;
+      margin-bottom:$base * 3;
+      @media (max-width:$tablet-down) {
+        padding-bottom:$base;
+      }
+    }
+    //@include pad($small);
+  }
+  .row:last-child {
+    justify-content:flex-start;
+    flex-direction:row;
+    @media (min-width:$tablet-up) {
+      padding-bottom:0;
+      margin-top:1em;
+    }
+    margin-top:2em;
+    padding-top:0;
+  }
+}

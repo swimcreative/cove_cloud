@@ -1,0 +1,83 @@
+// utilities
+@import 'scss/utilities';
+@import 'scss/type';
+@import 'scss/forms';
+@import 'scss/grid';
+@import 'scss/header';
+@import 'scss/footer';
+@import 'scss/template_parts/slider';
+@import 'scss/template_parts/hero';
+@import 'scss/template_parts/intro';
+@import 'scss/template_parts/rethink';
+@import 'scss/template_parts/specs';
+@import 'scss/template_parts/mod';
+@import 'scss/template_parts/contact';
+
+body {
+  overflow-x:visible;
+}
+// globals
+img {
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+#intro .row > div:last-child {
+  display:none;
+}
+
+.carousel-blueprints {
+  .flickity-prev-next-button {
+    display:none;
+    z-index:9999;
+    svg {
+      path {
+        fill:$dark-blue;
+      }
+    }
+  }
+  flex-direction:column;
+  .flickity-viewport {
+    flex-direction:row;
+    display:flex;
+    width:100% !important;
+    clear:both;
+  }
+  .flickity-page-dots {
+    li {
+      border:2px solid $blue;
+    }
+  }
+  .flickity-page-dots {
+    position:relative;
+    clear:both;
+    margin-top:30px;
+    left:0 !important;
+    @media (max-width:$mobile-down) {
+      margin-top:60px;
+    }
+  }
+  div {
+    span {
+      position:absolute;
+      bottom:20px;
+      @media (max-width:$mobile-down) {
+        padding:10px;
+        font-size:15px;
+      }
+      right:40px;
+      background:rgba(#000, .9);
+      min-width:150px;
+      text-align:Center;
+      color:white;
+      padding:20px;
+    }
+    height:65vw;
+    max-height:800px;
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:100% !important;
+  }
+}
