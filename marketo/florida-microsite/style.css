@@ -317,12 +317,20 @@ fieldset {
   clear: none;
   border: none; }
 
-input[type=submit] {
+input[type=submit],
+button[type=submit] {
   width: auto;
   color: white !important;
   clear: both;
   padding-bottom: 15.38462px;
-  line-height: 1; }
+  line-height: 1;
+  padding: 16px !important;
+  font-size: 1.4em !important;
+  background: #65cad7 !important;
+  border: none !important; }
+  input[type=submit]:hover,
+  button[type=submit]:hover {
+    background: #f8ab41 !important; }
 
 input[type=checkbox] {
   width: auto !important; }

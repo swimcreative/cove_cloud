@@ -94,12 +94,20 @@ fieldset {
   border:none;
 }
 
-input[type=submit] {
+input[type=submit],
+button[type=submit] {
   width:auto;
   color:white !important;
   clear:both;
   padding-bottom:$base / 1.3;
   line-height:1;
+  padding:16px !important;
+  font-size:1.4em !important;
+  background:#65cad7 !important;
+  border:none !important;
+  &:hover {
+    background:$orange !important;
+  }
 }
 
 input[type=checkbox] {
