@@ -1,0 +1,214 @@
+.floorplan {
+  background-image:url(assets/img/interior.jpg);
+  @include cover;
+  color:white;
+  padding-bottom:0;
+  .row {
+    @include headings {
+      color:white;
+    }
+    li {
+      margin-bottom:15px;
+      font-size:18px;
+    }
+    //justify-content:flex-end;
+    flex-direction:column;
+    > div {
+      br {
+        display:block !important;
+      }
+      position:relative;
+      z-index:999;
+      &:last-child {
+        margin-top:40px;
+        width:100%;
+        backgrounD:rgba(darken($dark-blue, 10%), .65);
+        @include pseudo_width;
+        display:flex;
+        @include even_columns(2,2,1, 60px);
+        margin:0;
+        > div {
+          padding-left:0;
+          display:flex;
+          @media (min-width:$mobile-up) {
+            flex-directioN:row;
+            > div:first-child {
+              border-right:1px solid rgba(255,255,255, .4);
+            }
+          }
+          flex-direction:column;
+           ul {
+             margin-top:0;
+           }
+          > div:first-child {
+            padding-right:2em;
+            margin-right:2em;
+          }
+        }
+        .gallery {
+          padding-right:0;
+          @media (max-width:$mobile-down) {
+            padding-top:0;
+          }
+          > div:last-child {
+            margin-left:-3px;
+            margin-right:-3px;
+            @media (min-width:$mobile-up) {
+              flex-directioN:row;
+            }
+            flex-direction:column;
+            align-items:flex-start;
+            a {
+              vertical-align:top;
+              @media (min-width:$mobile-up) {
+                max-width:49%;
+              }
+              @media (min-width:$desktop-up) {
+                max-width:32.5%;
+              }
+              @media (max-width:$mobile-down) {
+                width:49%;
+              }
+              display:inline-block;
+              &:hover {
+                filter:brightness(110%);
+              }
+              img {
+                width:100%;
+                padding:3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .row > div:first-child {
+    text-align:center;
+    align-self:flex-end;
+    @media (min-width:$tablet-up) {
+      margin-bottom:80px;
+      width:500px;
+    }
+    @media (min-width:$desktop-up) {
+        width:45%;
+    }
+    width:100%;
+  }
+  .lead {
+    display:block;
+    font-size:15px;
+    margin-bottom:10px !important;
+    + h2 {
+      font-family:'Georgia';
+      margin-bottom:10px;
+    }
+  }
+  .details {
+    display:flex;
+      @media(min-width:$mobile-up) {
+      flex-directioN:row;
+      align-items:stretch;
+    }
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    @media (max-width:$mobile-down) {
+    > div:not(:last-child) {
+      flex-basis:50%;
+      width:50%;
+      &:nth-child(2) {
+        border-left:none;
+        }
+      }
+    }
+    div {
+      &:last-child {
+        flex-basis:100%;
+        width:100%;
+      }
+      display:flex;
+      flex-direction:column;
+      @media(min-width:$mobile-up) {
+        &:not(:last-of-type) {
+          border-right:none;
+        }
+        width:calc(100% / 3);
+        flex-basis:calc(100% / 3);
+        max-width:calc(100% / 3);
+      }
+      @media (max-width:$mobile-down) {
+        &:not(:last-of-type) {
+          border-bottom:none;
+        }
+      }
+      border:2px solid white;
+      text-align:center;
+      padding:20px;
+      color:white;
+      h3 {
+        margin:0;
+        font-family:'Georgia', serif;
+        font-size:2.75em;
+      }
+      small {
+        color:white;
+        font-size:15px;
+        margin:0;
+      }
+    }
+  }
+  @media (min-width:$mobile-up) {
+    @include radial_gradient;
+  }
+  @media (max-width:$mobile-down) {
+      @include overlay;
+  }
+  &:nth-child(even) {
+    background-image:url(assets/img/outside.jpg);
+    &:after {
+      transform:scale(-1);
+    }
+    .row {
+      > div:first-child {
+        align-self:flex-start;
+      }
+    }
+  }
+}
+
+#available-floorplans {
+  overflow:visible;
+  .row {
+    display:block;
+  }
+  padding:60px 0;
+  background:$light-blue;
+  text-align:center;
+  p {
+    margin:0;
+    color:white;
+  }
+  &:after {
+    z-index:9999;
+    position:absolute;
+    top:100%;
+    left:0;
+    display:inline-block;
+    margin:0 auto;
+    right:0;
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: $light-blue transparent transparent transparent;
+  }
+}
+
+#intro.community-page,
+.floorplan {
+  small {
+    margin-bottom:2em;
+  }
+}

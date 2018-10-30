@@ -1,0 +1,91 @@
+#about {
+  background-image:url(assets/img/abouttemp.jpg);
+  @include cover;
+  @include responsive_pad;
+  background-color:lightblue;
+  @include overlay(.15);
+  p {
+    max-width:600px;
+    font-size:1.1rem;
+  }
+  .fas {
+    color:$orange;
+    @media (max-width:$mobile-down) {
+      display:none;
+    }
+  }
+  .row {
+    @include one_two;
+    div:first-child {
+      @extend .text-shadow;
+      @media (max-width:$mobile-down) {
+        width:100%;
+      }
+      color:white;
+      @include headings {
+        color:white;
+      }
+    }
+    hr {
+      border-color:#bbb;
+      opacity:.4;
+      margin:20px 0;
+    }
+    div:last-child {
+      @media (max-width:$tablet-down) {
+        width:100%;
+        margin-top:2em;
+      }
+      border-radius:20px;
+      background:rgba(255,255,255,.85);
+      padding:30px;
+      p {
+        margin-bottom:20px;
+      }
+    }
+  }
+}
+
+// about PAGE
+
+#faq {
+  .row > div {
+    width:100%;
+  }
+  h5 {
+    cursor:pointer;
+    color:$dark-blue;
+    margin-bottom:20px;
+    &:after {
+      content:' »';
+      font-size:18px;
+      position:relative;
+      top:-2px;
+    }
+    &:hover,
+    &:focus {
+      color:lighten($dark-blue, 10%);
+    }
+    + p {
+      max-width:768px;
+    }
+  }
+}
+
+body[style*='block'] {
+  #faq h5 + p {
+    display:none
+  }
+}
+
+#path {
+  .col-md-4 {
+    @media (max-width:767px) {
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+  img {
+    width:100%;
+  }
+}

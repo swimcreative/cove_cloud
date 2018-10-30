@@ -1,0 +1,124 @@
+#intro {
+  background-color:$tan;
+  //background-image:url(assets/img/floorplan.jpg);
+  @include cover;
+  .row {
+    .btn-custom {
+      @media (max-width:$tablet-down) {
+        margin-bottom:3em;
+      }
+    }
+    em {
+      font-size:1.25rem;
+    }
+    > div:first-child {
+      @media (min-width:$desktop-up) {
+        order:2;
+      }
+      @include headings {
+        //color:white;
+      }
+      em {
+        @include border_accent;
+      }
+    }
+    //@include one_two;
+    @include even_columns(2,1,1,1);
+    align-items:flex-start;
+    div:last-child {
+      @media (min-width:$desktop-up) {
+        padding-right:4em;
+        padding-top:0;
+      }
+      padding-top:3em;
+      @media (max-width:$tablet-down) {
+        padding-top:0 !important;
+      }
+      strong {
+        font-family:$sys;
+        font-size:.8rem;
+      }
+      @media (max-width:$tablet-down) {
+        @include pad;
+        padding-bottom:0 !important;
+        br {
+          display:none;
+        }
+      }
+      color:$dark-gray;
+      position:relative;
+      > * {
+        position:relative;
+        z-index:99;
+      }
+
+    }
+  }
+  &.community-page {
+    li {
+      margin-bottom:20px;
+      font-size:1.15em;
+      color:#7f7f7f;
+    }
+    background:white;
+    @media (min-width:$desktop-up) {
+      div {
+        background:none;
+      }
+      &:after {
+        content:'';
+        background:$tan;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:50%;
+      }
+    .row > div:first-child {
+        order:1;
+        padding-right:60px;
+      }
+      .row > div:last-child {
+        order:1;
+        padding-left:40px;
+      }
+    }
+  }
+  @media (max-width:$desktop-down) {
+  padding-bottom:0;
+  .row > div:last-child {
+    padding-bottom:60px !important;
+    //background:$tan;
+    //@include pseudo_width;
+    }
+  }
+}
+
+  @media (max-width:$desktop-down) {
+    #intro.community-page .row > div:last-child {
+      margin-top:50px !important;
+    }
+  }
+
+@media (max-width:$tablet-down) {
+  #intro.community-page .row > div:last-child {
+    margin-top:50px !important;
+    padding-top:60px !important;
+  }
+}
+
+#intro2 {
+  .row {
+    margin-left:-2em;
+    margin-right:-2em;
+    > div {
+      padding-left:2em;
+      padding-right:2em;
+      @media (min-width:$tablet-up) {
+        width:33%;
+        max-width:33%;
+        flex-basis:33%;
+      }
+    }
+  }
+}

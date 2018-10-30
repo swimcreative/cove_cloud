@@ -1,0 +1,13 @@
+#specials {
+  background:$tan;
+  .row {
+    @include even_columns(2,2,1, 30px);
+  }
+  .lead {
+    border-bottom:2px solid rgba(0,0,0,.15);
+    padding-bottom:50px;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+
+}

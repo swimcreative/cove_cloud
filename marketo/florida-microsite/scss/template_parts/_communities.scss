@@ -1,0 +1,32 @@
+#communities {
+  .row {
+    img {
+      width:100%;
+    }
+    align-items:flex-start;
+    @include even_columns(3,2,2, 20px);
+    div {
+      margin-bottom:2em;
+      h3 {
+        font-size:1.5em;
+        margin:15px 0 3px 0;
+        + small {
+          font-size:15px;
+        }
+      }
+      p {
+        color:#a6a6a6;
+        margin-bottom:1em;
+      }
+    }
+  }
+  .lead {
+    color:#a7a7a7;
+  }
+}
+
+.lead {
+  @extend small;
+  font-family:"museo-sans", $sys;
+  text-transform:uppercase;
+}

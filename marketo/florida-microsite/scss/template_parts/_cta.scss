@@ -1,0 +1,43 @@
+#cta {
+  background:$orange;
+  padding-top:50px;
+  padding-bottom:50px;
+  color:white;
+  span {
+    color:white;
+  }
+  p, h2  {
+    &:not(p) {
+      text-align:right;
+      @media (max-width:$mobile-down) {
+        font-size:1.7em;
+        text-align:center;
+      }
+    }
+    margin:0;
+    @media (max-width:$tablet-down) {
+      text-align:center;
+    }
+    @media(max-width:$desktop-down) {
+      span {
+        display:none;
+      }
+      a:last-of-type {
+        display:block;
+        margin-top:20px;
+      }
+      br {
+        display:block !important;
+      }
+    }
+    a {
+      color:white;
+      &:hover {
+        opacity:.7;
+      }
+    }
+  }
+  .row {
+    @include two_one;
+  }
+}

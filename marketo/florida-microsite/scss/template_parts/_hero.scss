@@ -1,0 +1,60 @@
+#hero {
+  background-image:url(assets/img/herotemp.png);
+  @include cover;
+  @include responsive_pad;
+  background-position:center top;
+  @include headings {
+    color:white;
+    small {
+      color:white;
+    }
+  }
+  @extend .text-shadow;
+  @include overlay(.3);
+  //@include pad($large);
+
+  //@include overlay(.3);
+  //@extend %text-shadow;
+//  background-attachment:fixed;
+  background-position:center 35%;
+  color:$dark-green;
+  .row {
+    text-align:center;
+    display:block;
+    .btn-custom:last-child {
+      margin-bottom:0;
+    }
+    .btn {
+      clear:both;
+      display:inline-block;
+      width:auto;
+      margin:0 auto;
+    }
+    h1 {
+      border:3px solid white;
+      font-weight:700;
+      letter-spacing:3px;
+      display:inline-block;
+      padding:25px;
+      clear:both;
+      font-family:'museo-sans', $sys;
+      //text-transform:uppercase;
+      small {
+        margin-top:5px;
+        display:block;
+        text-transform:none;
+        font-family:$main;
+        font-weight:300;
+        font-size:1rem;
+      }
+      @media (min-width:$tablet-up) {
+        font-size:3.25rem;
+      }
+      margin-bottom:20px;
+      //font-size:3rem;
+    }
+  }
+  &.community-page {
+    background-image:url(assets/img/communitytemp.jpg);
+  }
+}

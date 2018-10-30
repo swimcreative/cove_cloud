@@ -1,0 +1,67 @@
+#contact-top {
+  padding:80px 0;
+  background:$green;
+  color:white;
+  span {
+    color:white;
+  }
+  .row {
+    @include two_one;
+    p {
+      font-size:1.4rem;
+    }
+    @media (max-width:$tablet-down) {
+      justify-content:flex-start;
+      flex-direction:column;
+      div {
+        width:100%;
+        @include headings {
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+  h2 {
+    margin:0;
+  }
+  p:last-of-type,
+  p:only-of-type {
+    margin:0;
+  }
+    @media (max-width:$mobile-down) {
+      a {
+      display:block;
+      margin-bottom:.5em;
+      border-bottom:1px solid white;
+      padding-bottom:.5em;
+      &:last-child {
+        border:none;
+        }
+      }
+      span {
+        display:none;
+      }
+    }
+    a {
+    color:white;
+    &:hover {
+      color:$light-blue;
+    }
+  }
+}
+
+#contact {
+  @include headings {
+    color:white;
+  }
+  background-color:$dark-blue;
+  background-image:url(assets/img/formbg.jpg);
+  @include cover;
+  color:white;
+  .row {
+    flex-direction:column;
+    div {
+      width:100%;
+    }
+  }
+}
