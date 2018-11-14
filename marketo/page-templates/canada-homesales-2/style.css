@@ -105,13 +105,15 @@ button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
   letter-spacing: 3px;
   font-weight: 800;
   font-size: 1rem;
-  background: #65cad7;
-  padding: 13.33333px 20px;
+  background: #65cad7 !important;
+  padding: 13.33333px 20px !important;
+  box-shadow:none !important;
   min-width: 10rem;
   margin-top: .5em;
   margin-bottom: .5em;
   display: inline-block;
   color: white;
+  border:none !important;
   text-transform: uppercase;
   border-top: none;
   outline: none;
@@ -206,7 +208,8 @@ fieldset li label {
   margin-bottom: 10px !important; }
 
 select {
-  border-radius: 0 !important; }
+  border-radius: 0 !important; 
+padding:12px;}
 
 .checkbox-option input {
   -webkit-appearance: checkbox !important;
@@ -244,6 +247,12 @@ fieldset {
   padding: 0;
   clear: none;
   border: none; }
+
+  input[type=checkbox] {
+    appearance:checkbox !important;
+    -webkit-appearance:checkbox !important;
+    padding:5px;
+  }
 
 input[type=submit] {
   width: auto;
@@ -1430,3 +1439,5 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+
