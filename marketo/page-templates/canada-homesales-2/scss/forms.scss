@@ -1,0 +1,86 @@
+
+form {
+  @include clearfix;
+  width:100%;
+  margin-top:1em;
+  input[type=submit],
+  button[type=submit] {
+    display:flex;
+    justify-content:center;
+    @media (min-width:$mobile-up) {
+      width:auto !important;
+    }
+  }
+
+}
+
+fieldset li label {
+  color:white !important;
+}
+
+.ss-form {
+  padding:0 !important;
+}
+
+fieldset li {
+  @media (min-width:$tablet-up) {
+  float:left;
+  width:46%;
+  float:left;
+  clear:none !important;
+  &:nth-child(odd) {
+    float:right;
+    margin-left:4%;
+    clear:both !important;
+    }
+  }
+}
+
+.checkbox-option,
+.radio-option {
+  margin-bottom:10px !important;
+}
+
+select {
+  border-radius:0 !important;
+}
+
+.checkbox-option input  {
+  appearance:checkbox !important;
+}
+
+ .radio-option input {
+   appearance:radio !important;
+ }
+
+input {
+  font-size:1rem;
+  background:$light-gray;
+  appearance:none;
+  -webkit-appearance:none;
+  box-shadow:none;
+  border:none;
+  display:block;
+  padding:$base;
+  margin-bottom:1em;
+  width:100%;
+}
+.fields {
+  margin-bottom:1em;
+  @include clearfix;
+}
+
+fieldset {
+  margin:0;
+  padding:0;
+  clear:none;
+  border:none;
+}
+
+input[type=submit] {
+  width:auto;
+  color:white !important;
+  clear:both;
+  padding-bottom:$base / 1.3;
+  line-height:1;
+}

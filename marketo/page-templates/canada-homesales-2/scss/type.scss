@@ -1,0 +1,158 @@
+// global type
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+body, html {
+  overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  @media (min-width:$mobile-up) {
+    font-size:$font-size - 2px;
+  }
+  @media (min-width:$tablet-up) {
+    font-size:$font-size;
+  }
+  font-size:$font-size - 3px;
+  color:$dark-gray;
+  font-family:$main;
+  font-weight:300;
+  margin:0;
+  line-height:1.3;
+  padding:0;
+  * {
+    box-sizing:border-box;
+  }
+  @supports (-webkit-overflow-scrolling: touch) {
+    font-weight:400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+a {
+  text-decoration:none;
+}
+@include headings {
+  font-family:$alt;
+  //text-transform:uppercase;
+  margin-bottom:.55em;
+  margin-top:0;
+  font-weight:300;
+  letter-spacing:0;
+  line-height:1.05;
+}
+
+h1 {
+  font-size:2.5rem;
+}
+h2 {
+  font-size:2.2rem;
+}
+h3 {
+  font-size:1.9rem;
+}
+h4{
+  font-size:1.6rem;
+}
+h5{
+  font-size:1.3rem;
+  font-family:"museo-sans", $sys;
+  font-weight:600;
+}
+h6 {
+  font-size:1rem;
+  font-weight:800;
+  font-family:"museo-sans", $sys;
+}
+
+p {
+  margin-top:0;
+  margin-bottom:1.5em;
+}
+
+ul {
+  padding-left:$base;
+  margin:1em 0;
+  li {
+    margin-bottom:.5em;
+  }
+}
+
+form {
+input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+    padding:$base / 1.5;
+  }
+}
+
+// BUTTON
+button:not(.flickity-prev-next-button), .btn-custom, input[type=submit] {
+  font-family:'museo-sans', $sys;
+  cursor:pointer;
+  appearance:none;
+  text-align:center;
+  letter-spacing:3px;
+  font-weight:800;
+  font-size:1rem;
+  background:$blue;
+  //border-bottom:4px solid $burnt-orange;
+  padding:$base / 1.5 $base;
+  min-width:10rem;
+  margin-top:.5em;
+  margin-bottom:.5em;
+  display:inline-block;
+  color:white;
+  text-transform:uppercase;
+  & + & {
+    margin-left:1em;
+  }
+  &:hover {
+    background:$orange;
+    border-bottom:none;
+    color:white !important;
+  }
+  border-top:none;
+  outline:none;
+  transition:none;
+  //border:none;
+  border-right:none;
+  border-left:none;
+  font-weight:700;
+  text-shadow:none;
+  @supports (-webkit-overflow-scrolling: touch) {
+    font-weight:900 !important;
+  }
+}
+
+p {
+  font-size:1rem;
+}
+
+.btn-custom {
+  @media (max-width:479px) {
+    width:100%;
+  }
+  &.btn-custom-alt {
+    background:$orange;
+    &:hover {
+      background:$blue;
+      color:white;
+    }
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lighten($medium-gray, 15%);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:  lighten($medium-gray, 15%);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:  lighten($medium-gray, 15%);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:  lighten($medium-gray, 15%);
+}
+
+
+.row div li {
+  list-style-type:disc !important;
+}

@@ -1,0 +1,95 @@
+#rethink {
+  background-color:$light-tan;
+  background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-cream.jpg);
+  @include cover;
+
+  .container > p {
+    margin-top:1em;
+    font-family:$sys;
+    font-weight:600;
+    @media (min-width:$tablet-up) {
+      margin-bottom:0;
+    }
+
+      + br + h4 a {
+        + span {
+          color:#bbb;
+        }
+        color:$light-blue;
+        display:inline-block;
+        &:hover {
+          color:darken($blue, 10%);
+        }
+      }
+      font-family:$sys;
+      font-weight:600;
+
+  }
+
+  .container > .row {
+
+    hr {
+      margin-bottom:40px;
+      border-color:$light-blue;
+      border-style:solid;
+      border-width:1px;
+      padding:0;
+    }
+    @include one_two;
+    align-items:flex-start;
+  }
+
+  .left .row {
+
+    h3 {
+      width:100% !important;
+      max-width:100% !important;
+      flex-basis:100% !important;
+    }
+
+      @include even_columns(2,2,2, 30px);
+      @media (max-width:$tablet-down) {
+        .item {
+          padding-bottom:0;
+        }
+      }
+      @include clearfix;
+
+  }
+
+  .right {
+    .row {
+      position:relative;
+      p {
+        margin-bottom:18px;
+      }
+      ul {
+        margin-top:10px;
+      }
+      min-height:60px;
+      &:last-of-type {
+        margin-bottom:1em;
+      }
+    }
+    @media (max-width:$tablet-down) {
+      width:100%;
+      .row {
+        width:100%;
+        flex-direction:row;
+        text-align:left;
+        align-items:flex-start;
+        &:last-of-type {
+          margin-bottom:0em;
+        }
+      }
+    }
+    h6 {
+      position:absolute;
+      bottom:0px;
+      margin:19.5px 0;
+    }
+    .row:nth-of-type(2) {
+      flex-direction:column;
+    }
+  }
+}
