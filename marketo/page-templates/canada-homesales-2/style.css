@@ -908,7 +908,7 @@ main .flickity-page-dots {
 
 #rethink {
   background-color: #f4f2eb;
-  background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-cream.jpg);
+  background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-2/assets/img/floorplan-cream.jpg);
   background-size: cover;
   background-position: center center; }
   #rethink .container > p {
@@ -1045,7 +1045,7 @@ main .flickity-page-dots {
 
 #specs {
   background-color: #485935;
-  background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-gray.jpg);
+  background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-2/assets/img/floorplan-gray.jpg);
   background-size: 60%;
   color: white;
   padding-top: 100px;
@@ -1104,7 +1104,7 @@ main .flickity-page-dots {
         padding-right: 4%; } }
     #specs .row > div:last-child {
       background-color: #282829;
-      background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/kitchen.jpg);
+      background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-2/assets/img/kitchen.jpg);
       background-size: cover;
       background-position: center center;
       background-position: right center;
@@ -1226,7 +1226,7 @@ main .flickity-page-dots {
         -o-transition: opacity .2s;
         transition: opacity .2s;
         width: 100%;
-        background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-1///designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/house.jpg);
+        background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-1/https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-2/assets/img/house.jpg);
         background-size: cover;
         background-position: center center;
         background-position: right center;
@@ -1383,7 +1383,7 @@ main .flickity-page-dots {
 #land-lease {
   padding-top: 150px;
   padding-bottom: 150px;
-  background-image: url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/cove-house.jpg);
+  background-image: url(https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/canada-homesales-2/assets/img/cove-house.jpg);
   background-size: cover;
   background-position: center center; }
   #land-lease .btn-custom {
