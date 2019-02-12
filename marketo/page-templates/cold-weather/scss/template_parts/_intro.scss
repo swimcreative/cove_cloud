@@ -1,0 +1,49 @@
+#intro {
+  //background-color:$tan;
+  //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-1///designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan.jpg);
+  @include cover;
+
+  h2:first-of-type {
+    font-size:2.5rem;
+    max-width:300px;
+    @include border_accent;
+    margin-bottom:-.2em;
+    &:after {
+      bottom:-1.5em;
+      @media (max-width:$tablet-down) {
+        bottom:-.8em;
+      }
+    }
+  }
+  .row {
+    em {
+      font-size:1.4rem;
+      color:$green;
+    }
+    > div:first-child {
+      em {
+        @include border_accent;
+      }
+    }
+    @include two_one;
+    align-items:flex-start;
+    div:last-child {
+      strong {
+        font-family:$sys;
+        font-size:.8rem;
+      }
+      @media (max-width:$tablet-down) {
+        @include pad;
+        padding-bottom:0 !important;
+        br {
+          display:none;
+        }
+      }
+      position:relative;
+      > * {
+        position:relative;
+        z-index:99;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+#details, #details-two{
+  //background-color:$dark-blue;
+  //background-image:url(//designsbypatrice.net/cove-landing/canada-homesales-2/assets/img/floorplan-gray.jpg);
+  background-size:60%;
+  //color:white;
+  .container {
+    position:static;
+  }
+  strong {
+    font-family:'arial', sans-serif;
+    font-size:.9rem;
+    display:block;
+    font-weight:900;
+  }
+
+  > h2 {
+    font-family:'Museo-sans';
+    font-weight:900;
+  }
+
+  em {
+    text-decoration:underline;
+  }
+  h4 {
+    font-family:'museo-sans', sans-serif;
+    font-weight:800;
+    font-size:1.5rem;
+    margin-top:15px;
+    margin-bottom:25px;
+  }
+  .row {
+    small {
+      display:block;
+      font-size:.8rem;
+      line-height:1.1;
+      color:#6c6c6c;
+    }
+    .btn-custom {
+      margin-bottom:1.5em;
+    }
+    h2 {
+      font-size:1.5rem;
+    font-family:'museo-sans', sans-serif;
+    font-weight:800;
+    margin-top:15px;
+    }
+    align-items:flex-start;
+    margin-left:-2em;
+    margin-right:-2em;
+    .column {
+      img {
+        width:100%;
+      }
+      padding-left:2em;
+      padding-right:2em;
+      @media (min-width:$tablet-up) {
+      width:33%;
+      max-width:33%;
+      flex-basis:33%;
+      }
+    }
+  }
+  @include headings {
+    //color:white;
+
+  }
+}
+
+#details-two {
+  img {
+    max-width:250px;
+    margin-left:-20px;
+    margin-bottom:-20px;
+  }
+
+  br + strong {
+    color:#65cad7;
+    font-weight:900;
+  }
+}
