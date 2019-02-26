@@ -1307,6 +1307,42 @@ img.object-fit,
     #contact .row div {
       width: 100%; }
 
+#feature {
+  background: #65cad7;
+  color: white; }
+  #feature h1, #feature h2, #feature h3, #feature h4, #feature h5, #feature h6 {
+    font-family: 'museo-sans', sans-serif;
+    font-weight: 900; }
+    #feature h1 small, #feature h2 small, #feature h3 small, #feature h4 small, #feature h5 small, #feature h6 small {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Athelas", Georgia;
+      font-style: italic; }
+  #feature .row {
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      #feature .row div {
+        width: 50%;
+        max-width: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+        #feature .row div:last-child {
+          padding-left: 10%; } }
+    #feature .row div {
+      width: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+      padding-left: 0; }
+      #feature .row div img {
+        width: 100%; }
+  #feature .btn-custom {
+    background: #fff;
+    color: #65cad7; }
+    #feature .btn-custom:hover {
+      background: #f8ab41; }
+
 #land-lease {
   padding-top: 150px;
   padding-bottom: 150px;
