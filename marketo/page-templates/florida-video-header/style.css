@@ -842,7 +842,7 @@ main .flickity-page-dots {
     background-size: cover;
     background-position: center center;
     height: 100%;
-    background-color: #282829;
+    background-color: #004f5d !important;
     width: 100%; }
     #hero .carousel .carousel-item .container {
       position: relative;
@@ -953,10 +953,10 @@ main .flickity-page-dots {
         background: #41a85f; }
     @media (min-width: 768px) {
       #intro .row > div:last-child {
-        width: calc(100% / 3 * 2);
-        padding-left: 10%; }
+        width: calc(100% / 2);
+        padding-left: 5%; }
       #intro .row > div:first-child {
-        width: calc(100% / 3);
+        width: calc(100%/ 2);
         padding-right: 4%; } }
     #intro .row div:last-child {
       position: relative; }
@@ -1175,10 +1175,10 @@ main .flickity-page-dots {
           margin-bottom: 100px; } }
     @media (min-width: 768px) {
       #specs .row > div:last-child {
-        width: calc(100% / 3 * 2);
-        padding-left: 10%; }
+        width: calc(100% / 2);
+        padding-left: 5%; }
       #specs .row > div:first-child {
-        width: calc(100% / 3);
+        width: calc(100%/ 2);
         padding-right: 4%; } }
     #specs .row > div:last-child {
       background-color: #282829;
@@ -1370,10 +1370,10 @@ main .flickity-page-dots {
       font-size: 1rem; }
     @media (min-width: 768px) {
       #mod .row > div:last-child {
-        width: calc(100% / 3 * 2);
-        padding-left: 10%; }
+        width: calc(100% / 2);
+        padding-left: 5%; }
       #mod .row > div:first-child {
-        width: calc(100% / 3);
+        width: calc(100%/ 2);
         padding-right: 4%; } }
     #mod .row > div:last-child {
       float: right; }
@@ -1409,10 +1409,10 @@ main .flickity-page-dots {
     flex-basis: 100%; }
     @media (min-width: 768px) {
       #contact-top .row > div:last-child {
-        width: calc(100% / 3 * 2);
-        padding-left: 10%; }
+        width: calc(100% / 2);
+        padding-left: 5%; }
       #contact-top .row > div:first-child {
-        width: calc(100% / 3);
+        width: calc(100%/ 2);
         padding-right: 4%; } }
     #contact-top .row p {
       font-size: 1.4rem; }

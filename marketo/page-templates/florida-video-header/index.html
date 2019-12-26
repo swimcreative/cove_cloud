@@ -18,10 +18,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link type="text/css" href="style.css"
 rel="stylesheet" media="all">
-<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/js/main.js"></script>
+<script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/js/main.js"></script>
 
 <!-- meta vars -->
-
+  <meta class="mktoImg" id="heroBackgroundImage" mktoname="Background Image" default="https://www.covecommunities.com/wp-content/uploads/2018/09/bg03@2x-1386x360.jpg" mktomodulescope="true" />
 <meta class="mktoBoolean" id="showHero" mktoName="Show Hero" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
 <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
 <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
@@ -68,7 +68,7 @@ rel="stylesheet" media="all">
   <div class="container">
     <a class="brand" href="//www.covecommunities.com/" target="_blank">
       <div class="mktoImg" id="logo" mktoName="Main Logo">
-        <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida/assets/img/cove-homes.png">
+        <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/img/cove-logo-color.png">
       </div>
     </a>
     <a href="#" class="burger">
@@ -96,23 +96,24 @@ rel="stylesheet" media="all">
 
 <main role="main">
 
-  <section id="hero">
+  <section id="hero" style="background:url(${heroBackgroundImage})">
+
     <div class="carousel">
 
   <div class="carousel-item">
-    <video muted loop width="320" height="240" autoplay class="object-fit mktoImg" id="heroBG" mktoName="Hero BG">
-      <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/mp4">
-      <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    <video autoplay muted playsinline loop width="320" height="240" class="object-fit mktoImg" id="heroBG" mktoName="Hero BG">
+      <source src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/beach.mp4" type="video/mp4">
+      <!--<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> -->
     </video>
 
   <div class="container">
   <div class="row">
     <small class="row mktoText" id="hero-pre-headline" mktoName="Hero Pre Headline">
-    <em>The perfect setting for</em>
+    <em>Head south for the winter</em>
     </small>
-    <h1 class="mktoText" id="hero-headline" mktoName="Hero Headline">Happily Ever After.</h1>
+    <h1 class="mktoText" id="hero-headline" mktoName="Hero Headline">And Save!</h1>
     <div class="mktoText" id="heroButton" mktoName="Hero Button">
-      <a class="btn-custom" target="_blank" href="https://covecommunities.com/">Button</a>
+      <a href="#intro"class="btn-custom" target="_blank" href="https://covecommunities.com/">Learn More</a>
     </div>
   </div>
 </div>
@@ -123,8 +124,8 @@ rel="stylesheet" media="all">
   <section id="intro">
     <div class="container">
       <div class="row">
-        <div class="mktoText" id="intro-headline" mktoName="Intro Headline">
-          <h2>It’s just what you need</h2>
+        <div class="mktoImg" id="into-image" mktoName="Intro Image">
+          <img src="http://source.unsplash.com/1080x720?beach, resort">
         </div>
         <div class="mktoText" id="intro-copy" mktoName="Intro Copy">
           <p>A new home is calling — a place you can feel the grass beneath your toes, start up the grill and invite the neighbours over. Cove Communities has just the place. Our wide selection of used manufactured homes and new modular homes allows you to own in a location you love - at prices you will love too.</p>
@@ -139,14 +140,7 @@ rel="stylesheet" media="all">
   <section id="mod">
     <div class="container">
       <div class="row">
-        <div>
-       <h2 class="mktoText" id="about-cove-headline" mktoName="About Cove Headline">There’s no place like Cove</h2>
 
-      <div class="mktoText" id="about-cove-button" mktoName="About Cove Button">
-         <a class="btn-custom" target="_blank" href="https://covecommunities.com/">Button</a>
-       </div>
-
-     </div>
         <div class="mktoText" id="about-cove-copy" mktoName="Abou Cove Copy">
           <strong>What is a Cove Community?</strong>
 
@@ -157,6 +151,9 @@ rel="stylesheet" media="all">
           <li>A lifestyle that offers a sense of happiness and belonging for all residents and guests </li>
           <li>A simple path to home or vacation home ownership</li>
         </ul>
+        </div>
+        <div class="mktoImg" id="into-image-2" mktoName="Intro Image 2">
+          <img src="http://source.unsplash.com/1080x720?beach, resort">
         </div>
       </div>
     </div>
