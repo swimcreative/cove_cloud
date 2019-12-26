@@ -3,9 +3,11 @@
 
 <head>
 
+<meta class="mktoString" id="pageTitle" mktoName="Page Title" default="Cove Florida | Cove Communities">
+
 <meta charset="utf-8">
 
-<title>Cove Florida | Cove Communities</title>
+<title>${pageTitle}</title>
 
 <!-- Mobile-friendly viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +18,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<link type="text/css" href="style.css"
+<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/style.css"
 rel="stylesheet" media="all">
 <script src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/js/main.js"></script>
 
 <!-- meta vars -->
-  <meta class="mktoImg" id="heroBackgroundImage" mktoname="Background Image" default="https://www.covecommunities.com/wp-content/uploads/2018/09/bg03@2x-1386x360.jpg" mktomodulescope="true" />
+<meta class="mktoString" id="heroBackgroundVideo" mktoName="Hero Background Video" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/beach.mp4">
+<meta class="mktoString" id="heroBackground" mktoname="Hero Background Image" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/bg-placeholder.jpg">
 <meta class="mktoBoolean" id="showHero" mktoName="Show Hero" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
 <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
 <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES">
@@ -96,13 +99,14 @@ rel="stylesheet" media="all">
 
 <main role="main">
 
-  <section id="hero" style="background:url(${heroBackgroundImage})">
+  <section id="hero">
 
     <div class="carousel">
 
-  <div class="carousel-item">
-    <video autoplay muted playsinline loop width="320" height="240" class="object-fit mktoImg" id="heroBG" mktoName="Hero BG">
-      <source src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/page-templates/florida-video-header/assets/beach.mp4" type="video/mp4">
+  <div class="carousel-item" style="background-size:cover;background-position:center center; background-image:url('${heroBackground}')">
+    <video autoplay muted playsinline loop width="320" height="240" class="object-fit">
+      <source src="${heroBackgroundVideo}" type="video/mp4">
+      <source src="${heroBackgroundVideo}" type="video/ogg">
       <!--<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> -->
     </video>
 

@@ -1,71 +1,81 @@
 #mod {
-  background:$light-blue;
-  color:white;
+  background: $light-blue;
+  color: white;
+
   .row {
-    position:relative;
+    position: relative;
   }
-   h2:first-of-type {
+
+  h2:first-of-type {
     @include border_accent;
+
     &:after {
-      background:White;
+      background: White;
     }
-    margin-bottom:.8em;
+    margin-bottom: .8em;
+
     &:after {
-      bottom:-1.5em;
+      bottom: -1.5em;
       @media (max-width:$tablet-down) {
-        bottom:-.8em;
+        bottom: -.8em;
       }
     }
   }
+
   .btn-custom {
-    margin-top:5em;
-    background:$orange;
+    margin-top: 5em;
+    background: $orange;
+
     &:hover {
-      background:$dark-blue !important;
+      background: $dark-blue !important;
     }
     @media (max-width:$tablet-down) {
-      margin-top:2em;
-      position:absolute;
-      bottom:0px;
-      left:0;
-      right:0;
-      width:100%;
+      margin-top: 2em;
+      margin-left: 0;
+      //  position:absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
     }
   }
   @include headings {
-    color:white;
+    color: white;
   }
+
   .container {
-    position:static;
+    position: static;
   }
+
   .row {
     p {
-      font-size:1rem;
+      font-size: 1rem;
     }
     @include two_one;
-    justify-content:flex-end;
-    align-items:flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
+
     > div:last-child {
       strong {
-        display:block;
-        margin-bottom:1em;
-        font-size:1.1rem;
-        font-family:$sys;
+        display: block;
+        margin-bottom: 1em;
+        font-size: 1.1rem;
+        font-family: $sys;
       }
-      float:right;
-    //  margin-bottom:1.5em;
+      float: right;
+      //  margin-bottom:1.5em;
     }
-    > div:first-child {
 
-    }
+    > div:first-child {}
 
     > div:last-child {
-          @media (max-width:$tablet-down) {
-            padding-bottom:30px;
-            > *:last-child {
-              margin-bottom:100px;
-            }
-          }
+      @media (max-width:$tablet-down) {
+        padding-bottom: 30px;
+
+        > *:last-child {
+          margin-bottom: 100px;
+        }
+      }
     }
   }
 }

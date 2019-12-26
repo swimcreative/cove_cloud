@@ -1346,8 +1346,8 @@ main .flickity-page-dots {
     @media (max-width: 767px) {
       #mod .btn-custom {
         margin-top: 2em;
-        position: absolute;
-        bottom: 0px;
+        margin-left: 0;
+        bottom: 0;
         left: 0;
         right: 0;
         width: 100%; } }
