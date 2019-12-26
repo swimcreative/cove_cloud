@@ -1,269 +1,249 @@
 //* VARS   *//
-
 // colors
-$green:rgb(65, 168, 95);
-$blue:#65cad7;
-$dark-blue:rgb(0, 79, 93);
-$light-blue:#65cad7;
-$dark-green:#485935;
-$brown:#8d4930;
-$orange:#f8ab41;
-$medium-gray:#909398;
-$tan:#f3efdf;
-$light-gray:#f3f4f3;
-$dark-gray:#676769;
-$light-tan:#f4f2eb;
-
-
-// breaks
+$green: rgb(65, 168, 95);
+$blue: #65cad7;
+$dark-blue: rgb(0, 79, 93);
+$light-blue: #65cad7;
+$dark-green: #485935;
+$brown: #8d4930;
+$orange: #f8ab41;
+$medium-gray: #909398;
+$tan: #f3efdf;
+$light-gray: #f3f4f3;
+$dark-gray: #676769;
+$light-tan: #f4f2eb; // breaks
 $sm: 500px;
 $md: 768px;
 $lg: 1200px;
 $hd: 1400px;
-
 $mobile-down: $sm - 1px;
 $mobile-up: $sm;
-
 $tablet-down: $md - 1px;
 $tablet-up: $md;
-
 $desktop-down: $lg - 1px;
-$desktop-up: $lg;
-
-
-// fonts
+$desktop-up: $lg; // fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800');
 @import url('https://fonts.googleapis.com/css?family=Oswald:700');
-
-$alt:'Athelas', Georgia;
-$sys:'museo-sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$alt: 'Athelas', Georgia;
+$sys: 'museo-sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $main: 'Athelas', georgia;
-
-$font-size:20px;
-
-// measure
-$base: 20px;
-
-// mixins
+$font-size: 20px; // measure
+$base: 20px; // mixins
 @mixin clearfix {
   &:after {
-    content:'';
-    clear:both;
-    display:table;
+    content: '';
+    clear: both;
+    display: table;
   }
 }
-
 @mixin abs {
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  width:100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
-
 @mixin vert_align {
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 //COVER
 @mixin cover {
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
 }
-
 // OVERLAY
 @mixin overlay($opac: .4) {
-  position:relative;
+  position: relative;
+
   .container {
-    position:relative;
-    z-index:99999;
+    position: relative;
+    z-index: 99999;
   }
+
   &:before {
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:#000;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
     opacity: $opac;
-    z-index:9999;
+    z-index: 9999;
   }
 }
-
-
 
 %text-shadow {
-  text-shadow:0px 0px 15px rgba(0,0,0,.25);
+  text-shadow: 0 0 15px rgba(0,0,0,.25);
 }
-
 @mixin headings {
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @content;
   }
 }
-
 $base-duration: .18s;
-
 $measure: 100px;
-$small:$measure / 1.75;
-$medium:$measure;
-$large:$measure * 1.5;
-$hero:25vh;
+$small: $measure / 1.75;
+$medium: $measure;
+$large: $measure * 1.5;
+$hero: 25vh;
 $sub: $measure;
-
 @mixin pad($val: $medium) {
-  padding-top:$val;
-  padding-bottom:$val;
-
+  padding-top: $val;
+  padding-bottom: $val;
   @media (max-width:$tablet-down) {
-    padding-top:$val / 1.8;
-    padding-bottom:$val / 1.8;
+    padding-top: $val / 1.8;
+    padding-bottom: $val / 1.8;
   }
 }
-
 
 .gradient {
   @include clearfix;
+
   span {
-    float:left;
-    height:10px;
-    width:calc(100% / 6);
+    float: left;
+    height: 10px;
+    width: calc(100% / 6);
+
     &:first-child {
-      background:$light-blue;
+      background: $light-blue;
     }
+
     &:nth-child(2) {
-      background:$green;
+      background: $green;
     }
+
     &:nth-child(3) {
-      background:$medium-gray;
+      background: $medium-gray;
     }
+
     &:nth-child(4) {
-      background:$green;
+      background: $green;
     }
-    &:nth-child(5){
-      background:$light-gray;
+
+    &:nth-child(5) {
+      background: $light-gray;
     }
+
     &:last-child {
-     background:$orange;
+      background: $orange;
     }
   }
 }
-
-
-
 @mixin right {
   @media (min-width:$tablet-up) {
-  .row > div {
-    float:right;
-    width:50%;
+    .row > div {
+      float: right;
+      width: 50%;
     }
   }
 }
-
 @mixin left {
   @media (min-width:$tablet-up) {
-  .row > div {
-    float:left;
-    width:50%;
+    .row > div {
+      float: left;
+      width: 50%;
     }
   }
 }
-
 @mixin big_right {
   @media (min-width:$tablet-up) {
-  .row > div {
-    &:first-child {
-      width:50%;
-      order:1;
-      //width:calc(100% / 3 * 2);
-    }
-    &:last-child {
-      width:50%;
-      //width:calc(100% / 3);
+    .row > div {
+      &:first-child {
+        width: 50%;
+        order: 1;
+        //width:calc(100% / 3 * 2);
+      }
+
+      &:last-child {
+        width: 50%;
+        //width:calc(100% / 3);
       }
     }
   }
 }
-
 @mixin big_left {
   @media (min-width:$tablet-up) {
-  .row > div {
-    &:last-child {
-      order:1;
-      width:50%;
-      //width:calc(100% / 3 * 2);
-    }
-    &:first-child {
-      order:2;
-      width:50%;
-    //  width:calc(100% / 3);
+    .row > div {
+      &:last-child {
+        order: 1;
+        width: 50%;
+        //width:calc(100% / 3 * 2);
+      }
+
+      &:first-child {
+        order: 2;
+        width: 50%;
+        //  width:calc(100% / 3);
       }
     }
   }
 }
-
 @mixin after {
   &:after {
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:100%;
-    background:inherit;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    background: inherit;
   }
 }
-
 @mixin before {
   &:before {
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:100%;
-    background:$teal;
-    display:block;
-    z-index:9999;
-    width:4000px;
-    width:100vw;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    background: $teal;
+    display: block;
+    z-index: 9999;
+    width: 4000px;
+    width: 100vw;
   }
 }
-
 @mixin gradient {
   &:after {
-    content:'';
-    background:#ccc;
-    opacity:.6;
-    position:absolute;
-    right:50%;
-    left:0;
-    top:0;
-    bottom:0;
-    z-index:99;
+    content: '';
+    background: #ccc;
+    opacity: .6;
+    position: absolute;
+    right: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
     /* Permalink - use to edit and share this gradient: //colorzilla.com/gradient-editor/#000000+55,000000+100&0.89+37,0+100 */
-    background: -moz-linear-gradient(left, rgba(0,0,0,0.99) 37%, rgba(0,0,0,0.64) 55%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0.99) 37%,rgba(0,0,0,0.64) 55%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0,0,0,0.99) 37%,rgba(0,0,0,0.64) 55%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.99) 37%, rgba(0,0,0,0.64) 55%, rgba(0,0,0,0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.99) 37%,rgba(0,0,0,0.64) 55%,rgba(0,0,0,0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.99) 37%,rgba(0,0,0,0.64) 55%,rgba(0,0,0,0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
   }
 }
-
-
-
 @mixin border_accent {
-  position:relative;
-  margin-bottom:6em;
-  display:inline-block;
+  position: relative;
+  margin-bottom: 1.5em;
+  display: inline-block;
+
   &:after {
-    position:absolute;
-    left:0;
-    bottom:-3em;
-    content:'';
-    height:2px;
-    width:100px;
-    background:$green;
+    position: absolute;
+    left: 0;
+    bottom: -.75em;
+    content: '';
+    height: 2px;
+    width: 100px;
+    background: $green;
   }
 }
