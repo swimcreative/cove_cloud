@@ -115,7 +115,7 @@ input[type=submit] {
   text-transform: uppercase;
 
   & + & {
-    margin-left: 1em;
+    //margin-left: 1em;
   }
 
   &:hover {
