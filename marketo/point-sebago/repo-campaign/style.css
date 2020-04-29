@@ -461,7 +461,7 @@ figure {
           padding-right: 0; } }
     @media (min-width: 768px) {
       #fun .container > div, #fun #content > div, #fun #last .container > div:last-child > div, #last #fun .container > div:last-child > div {
-        padding-right: 7%; } }
+        padding-right: 3%; } }
   #fun .btn {
     position: relative;
     float: right;
