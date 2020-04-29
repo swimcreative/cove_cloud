@@ -469,7 +469,7 @@ figure {
     #fun .btn:before {
       pointer-events: none;
       content: '';
-      background-image: url("img/check.png");
+      background-image: url("https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/check.png");
       position: absolute;
       right: 100%;
       bottom: 100%;
