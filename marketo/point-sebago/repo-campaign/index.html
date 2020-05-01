@@ -8,6 +8,7 @@
  	<meta class="mktoString" mktoName="Description" id="description" default="Looking to cast off your routine and chart a new course for summer adventure? Welcome to Point Sebago!">
     <meta class="mktoString" mktoName="Social Image" id="social_image" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/kids.jpg">
     <meta class="mktoString" mktoName="Youtube Video ID" id="var1" default="-o99v06dyQ0">
+		<meta class="mktoString" mktoName="Hero Mobile / Fallback image" id="hero_image" default="https://www.covecommunities.com/wp-content/uploads/PointSebago/Gallery/040918-memorial-day-beach-FB-1343x895.jpg">
   <meta class="mktoString" mktoName="Content Background Side Image" id="bg_side_image" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/beach-items.png">
 
 	<title>${title}</title>
@@ -26,6 +27,15 @@
 	<script src="https://rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/main.js?ver=1"></script>
 
 	<!-- marketo vars -->
+
+	<style>
+
+		#hero {
+			background-image:url(${hero_image});
+			background-size:cover;
+		}
+
+	</style>
 
 
 

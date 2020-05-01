@@ -41,6 +41,9 @@ body {
   right: -50%;
   top: -50%;
   bottom: -50%; }
+  @media (max-width: 599px) {
+    .videoContainer {
+      display: none; } }
   .videoContainer .fluid-width-video-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
