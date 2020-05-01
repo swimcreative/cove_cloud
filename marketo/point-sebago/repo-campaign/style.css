@@ -43,7 +43,8 @@ body {
   bottom: -50%; }
   @media (max-width: 599px) {
     .videoContainer {
-      display: none; } }
+      display: none;
+      visibilty: hidden; } }
   .videoContainer .fluid-width-video-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
