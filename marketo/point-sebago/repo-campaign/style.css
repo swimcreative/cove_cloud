@@ -82,9 +82,13 @@ main #last .container > div:last-child,
   margin-top: 14vh !important;
   margin-bottom: 14vh !important;
   width: auto !important; }
-  @media (min-width: 768px) {
-    #content main {
-      max-width: 50%; } }
+  #content main {
+    font-size: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 900px !important;
+    margin: 0 auto; }
 
 #content {
   background-position: right top;
@@ -185,15 +189,48 @@ header .container, header #content, header #last .container > div:last-child, #l
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2 {
-    text-shadow: 0 6px 0 rgba(0, 0, 0, 0.4);
-    font-size: 6rem; }
-    #hero .container h2 span, #hero #content h2 span, #hero #last .container > div:last-child h2 span, #last #hero .container > div:last-child h2 span {
-      font-size: 8rem; }
-  #hero .container > div, #hero #content > div, #hero #last .container > div:last-child > div, #last #hero .container > div:last-child > div {
-    padding-bottom: 50px; }
+  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: Center;
+    -ms-flex-align: Center;
+    align-items: Center; }
+    #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last .container > div:last-child > div:last-child > *, #last #hero .container > div:last-child > div:last-child > * {
+      width: 50%; }
+    @media (max-width: 767px) {
+      #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        #hero .container > div:last-child img, #hero #content > div:last-child img, #hero #last .container > div:last-child > div:last-child img, #last #hero .container > div:last-child > div:last-child img {
+          width: 100%; }
+        #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last .container > div:last-child > div:last-child > *, #last #hero .container > div:last-child > div:last-child > * {
+          width: auto; } }
+  #hero .container img, #hero #content img, #hero #last .container > div:last-child img, #last #hero .container > div:last-child img {
+    margin: 20px 0; }
+  #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+    text-shadow: -5px 5px 0 #464646;
+    font-size: 5rem; }
+    @media (max-width: 599px) {
+      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+        margin-bottom: .65em; } }
+    #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+      display: block;
+      font-size: 10rem; }
+    @media (max-width: 1079px) {
+      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+        font-size: 4rem; }
+        #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+          font-size: 6rem; } }
+    @media (max-width: 599px) {
+      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+        font-size: 9vw; }
+        #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+          font-size: 2.7rem; } }
+  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+    /*	padding-bottom: 50px; */ }
 
-#content h1, #content #fun h2, #fun #content h2,
+#content h1, #content h2,
 #content h2,
 #content h3,
 #content h4,
@@ -203,6 +240,9 @@ header .container, header #content, header #last .container > div:last-child, #l
   color: #28ade0;
   line-height: .9;
   font-weight: 800; }
+
+#content h2:last-child {
+  color: #ea3f40; }
 
 #content .container, #content #content, #content #last .container > div:last-child, #last #content .container > div:last-child {
   display: -webkit-box;
@@ -215,7 +255,7 @@ header .container, header #content, header #last .container > div:last-child, #l
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 33vh;
+  padding-top: 15vh;
   padding-bottom: 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -284,11 +324,8 @@ nav {
   font-weight: 800;
   overflow: auto; }
   nav ul {
-    padding: 200px 0;
+    padding-left: 0;
     margin: auto; }
-    @media (max-width: 767px) {
-      nav ul {
-        padding: 100px; } }
     nav ul li {
       text-align: center;
       list-style-type: none;
@@ -312,7 +349,7 @@ nav {
   br {
     display: none; } }
 
-h1, #fun h2,
+h1, #content h2, #fun h2,
 h2,
 h3,
 h4,
@@ -328,14 +365,14 @@ h5,
 h6 {
   line-height: 1.1 !important; }
 
-h1, #fun h2 {
-  font-size: 3.2rem; }
+h1, #content h2, #fun h2 {
+  font-size: 3.1rem; }
   @media (max-width: 767px) {
-    h1, #fun h2 {
+    h1, #content h2, #fun h2 {
       font-size: 2.1rem;
       margin-bottom: 20px; } }
   @media (max-width: 499px) {
-    h1, #fun h2 {
+    h1, #content h2, #fun h2 {
       font-size: 1.9rem; } }
 
 h2 {
@@ -408,6 +445,37 @@ figure {
   margin: 0; }
   figure img {
     display: block; }
+
+#cta {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto; }
+  @media (max-width: 599px) {
+    #cta {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #cta > *:not(:last-child) {
+        padding-bottom: 30px; } }
+  #cta > * {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 50%; }
+    @media (max-width: 599px) {
+      #cta > * {
+        width: 100%; } }
 
 #carousel .container, #carousel #content, #carousel #last .container > div:last-child, #last #carousel .container > div:last-child {
   width: auto; }

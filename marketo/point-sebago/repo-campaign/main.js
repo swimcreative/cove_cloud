@@ -11,6 +11,7 @@
 
 			$('nav').css('display','flex');
 			$(this).attr('aria-expanded','true');
+			$('nav').css('margin-top', $('header').outerHeight());
 		}
 //		console.log('yep');
 	});

@@ -87,8 +87,12 @@ main {
 	width: auto !important;
 
 	main {
+		font-size: 24px;
+		display: flex;
+		max-width: 900px !important;
+		margin: 0 auto;
 		@media (min-width:768px) {
-			max-width: 50%;
+			//max-width: 50%;
 		}
 	}
 }
@@ -181,18 +185,61 @@ header .container {
 	margin-bottom: 50px;
 	justify-content: flex-start;
 
-	h2 {
-		text-shadow: 0 6px 0 rgba(0,0,0,.4);
-		//	@extend h1;
-		font-size: 6rem;
+	> div:last-child {
+		display: flex;
+		align-items: Center;
 
-		span {
-			font-size: 8rem;
+		> * {
+			width: 50%;
+		}
+		@media (max-width:767px) {
+			flex-wrap: wrap;
+
+			img {
+				width: 100%;
+			}
+			//flex-direction: column;
+			//flex-direction: column-reverse;
+			> * {
+				width: auto;
+			}
 		}
 	}
 
-	> div {
-		padding-bottom: 50px;
+	img {
+		margin: 20px 0;
+	}
+
+	h1 {
+		text-shadow: -5px 5px 0 $gray;
+		//	@extend h1;
+		@media (max-width:599px) {
+			margin-bottom: .65em;
+		}
+		font-size: 5rem;
+
+		span {
+			display: block;
+			font-size: 10rem;
+		}
+		@media (max-width:1079px) {
+			font-size: 4rem;
+
+			span {
+				font-size: 6rem;
+			}
+		}
+		@media (max-width:599px) {
+			font-size: 9vw;
+
+			span {
+				font-size: 2.7rem;
+			}
+		}
+	}
+
+	> div:last-child {
+		/*	padding-bottom: 50px; */
 	}
 }
 
@@ -210,6 +257,16 @@ header .container {
 	}
 }
 
+#content {
+	h2 {
+		@extend h1;
+
+		&:last-child {
+			color: $red;
+		}
+	}
+}
+
 #content .container {
 	display: flex;
 }
@@ -218,7 +275,7 @@ header .container {
 	color: #fff;
 	background: blue;
 	display: flex;
-	padding-top: 33vh;
+	padding-top: 15vh;
 	padding-bottom: 0;
 	align-items: center;
 
@@ -293,9 +350,10 @@ nav {
 	overflow: auto;
 
 	ul {
-		padding: 200px 0;
+		padding-left: 0;
+		//padding: 200px 0;
 		@media (max-width:767px) {
-			padding: 100px;
+			//	padding: 100px;
 		}
 		margin: auto;
 
@@ -348,7 +406,7 @@ h6 {
 }
 
 h1 {
-	font-size: 3.2rem;
+	font-size: 3.1rem;
 	@media (max-width:767px) {
 		font-size: 2.1rem;
 		margin-bottom: 20px;
@@ -457,6 +515,30 @@ figure {
 		display: block;
 	}
 	margin: 0;
+}
+
+#cta {
+	padding-top: 40px;
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+	@media (max-width:599px) {
+		flex-direction: column;
+
+		> *:not(:last-child) {
+			padding-bottom: 30px;
+		}
+	}
+
+	> * {
+		flex-direction: column;
+		display: flex;
+		align-items: flex-start;
+		width: 50%;
+		@media (max-width:599px) {
+			width: 100%;
+		}
+	}
 }
 
 #carousel {
