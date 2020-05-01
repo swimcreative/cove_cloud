@@ -170,18 +170,30 @@ header .container, header #content, header #last .container > div:last-child, #l
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
   height: 100%;
   margin-bottom: 50px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
+  #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2 {
+    text-shadow: 0 6px 0 rgba(0, 0, 0, 0.4);
+    font-size: 6rem; }
+    #hero .container h2 span, #hero #content h2 span, #hero #last .container > div:last-child h2 span, #last #hero .container > div:last-child h2 span {
+      font-size: 8rem; }
   #hero .container > div, #hero #content > div, #hero #last .container > div:last-child > div, #last #hero .container > div:last-child > div {
     padding-bottom: 50px; }
 
-#content h1, #content #hero .container h2, #hero #content h2, #content #fun h2, #fun #content h2,
+#content h1, #content #fun h2, #fun #content h2,
 #content h2,
 #content h3,
 #content h4,
@@ -300,7 +312,7 @@ nav {
   br {
     display: none; } }
 
-h1, #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2, #fun h2,
+h1, #fun h2,
 h2,
 h3,
 h4,
@@ -316,14 +328,14 @@ h5,
 h6 {
   line-height: 1.1 !important; }
 
-h1, #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2, #fun h2 {
+h1, #fun h2 {
   font-size: 3.2rem; }
   @media (max-width: 767px) {
-    h1, #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2, #fun h2 {
+    h1, #fun h2 {
       font-size: 2.1rem;
       margin-bottom: 20px; } }
   @media (max-width: 499px) {
-    h1, #hero .container h2, #hero #content h2, #hero #last .container > div:last-child h2, #last #hero .container > div:last-child h2, #fun h2 {
+    h1, #fun h2 {
       font-size: 1.9rem; } }
 
 h2 {

@@ -6,18 +6,20 @@
 
   	<meta class="mktoString" mktoName="Title" id="title" default="Point Sebago Resort | Maine’s Can’t Stop, Won’t Stop, Summer Fun Spot">
  	<meta class="mktoString" mktoName="Description" id="description" default="Looking to cast off your routine and chart a new course for summer adventure? Welcome to Point Sebago!">
+    <meta class="mktoString" mktoName="Social Image" id="social_image" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/kids.jpg">
     <meta class="mktoString" mktoName="Youtube Video ID" id="var1" default="-o99v06dyQ0">
-  <meta class="mktoString" mktoName="Content Background Side Image" id="bg_side_image" default="https://veraguarainforest.com/wp-content/uploads/2019/10/placeholder.png">
+  <meta class="mktoString" mktoName="Content Background Side Image" id="bg_side_image" default="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/beach-items.png">
 
 	<title>${title}</title>
 
 	<meta name="description" content="${description}">
+  <meta property="og:image" content="${social_image}" />
 	<link rel="icon" type="image/png" sizes="32x32" href="https://covecommunities.com/wp-content/uploads/fbrfg/favicon-32x32.png">
   <!-- Mobile-friendly viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- Style sheet link -->
-	<link type="text/css" href="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/style.css" rel="stylesheet" media="all">
+	<link type="text/css" href="style.css?ver=1" rel="stylesheet" media="all">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -52,14 +54,18 @@
 	</header>
 	<section id="hero">
 	<div class="videoContainer">
-		  <iframe class="videoContainer__video" allowfullscreen src="https://www.youtube.com/embed/-o99v06dyQ0?controls=0&autoplay=1&mute=1&loop=1&playlist=-o99v06dyQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  <iframe class="videoContainer__video" allowfullscreen src="https://www.youtube.com/embed/${var1}?controls=0&autoplay=1&mute=1&loop=1&playlist=-o99v06dyQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
 			<div class="container">
 				<div class="content mktoText" id="hero-text" mktoName="Hero Text">
-		     <h2>One Place. One Price. <br/>All The Things. <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/endlessfun.png"/></h2>
-		     <a target="_blank" href="https://bookings7.rmscloud.com/obookings3/Search/Index/10311/90/?Y=1" class="btn">Book Now!</a>&nbsp;<a class="btn" href="#">Learn More!</a>
-	      </div>
+			 <h2>The Big Outdoors <span>Is Calling</span></h2>
+			 </div>
+			 <div class="content mktoText" id="hero-text-lower" mktoName="Hero Text Lower">
+
+		     <a target="_blank" href="https://bookings7.rmscloud.com/obookings3/Search/Index/10311/90/?Y=1" class="btn">Book Now!</a>&nbsp;<a class="btn" href="#content">Learn More!</a>
+				   <img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/fresh-air.png"/>
+			  </div>
 	</div>
 	</section>
 
@@ -99,13 +105,13 @@
 	<div class="container">
 	<div class="row">
 		<figure>
-			<img class="mktoImg" id="image1" mktoName="Image One"/>
+			<img class="mktoImg" id="image1" mktoName="Image One" src="https://veraguarainforest.com/wp-content/uploads/2019/10/placeholder.png"/>
 		</figure>
 		<figure>
-			<img class="mktoImg" id="image2" mktoName="Image Two"/>
+			<img class="mktoImg" id="image2" mktoName="Image Two" src="https://veraguarainforest.com/wp-content/uploads/2019/10/placeholder.png"/>
 		</figure>
 		<figure>
-			<img class="mktoImg" id="image3" mktoName="Image Three"/>
+			<img class="mktoImg" id="image3" mktoName="Image Three" src="https://veraguarainforest.com/wp-content/uploads/2019/10/placeholder.png"/>
 		</figure>
 	</div>
 	</div>
@@ -130,7 +136,7 @@
 
 
 <div class="container">
-	<div><img class="mktoImg" id="bottom_side_image" mktoName="Bottom Side Image"/></div>
+	<div><img class="mktoImg" id="bottom_side_image" mktoName="Bottom Side Image" src="https://veraguarainforest.com/wp-content/uploads/2019/10/placeholder.png"/></div>
 	<div class="mktoText" id="end_content" mktoName="End Section Content">
 		<img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/heres-deal.jpg"/>
 		<h3>Week-long vacations
@@ -148,7 +154,7 @@
 				<a href="https://www.covecommunities.com/rv-resorts/maine/point-sebago/" target="_blank" class="brand"><img src="https://cdn.rawgit.com/swimcreative/cove_cloud/master/marketo/point-sebago/repo-campaign/img/PointSebagoLogo.png"/></a>
               </div>
 
-		<small><a target="_blank" href="https://www.facebook.com/pointsebago/"><span class="fa fa-facebook"></span></a> <a href="tel:8779411036"><span class="fa fa-phone"></span></a></small>
+		<small><a href="tel:8779411036"><span class="fa fa-phone"></span></a> <a target="_blank" href="https://www.facebook.com/pointsebago/"><span class="fa fa-facebook"></span></a></small>
 	</div>
 	</footer>
 </body>

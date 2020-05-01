@@ -174,13 +174,21 @@ header .container {
 	width: 100%;
 	position: relative;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: flex-start;
+	align-items: space-between;
 	height: 100%;
 	margin-bottom: 50px;
 	justify-content: flex-start;
 
 	h2 {
-		@extend h1;
+		text-shadow: 0 6px 0 rgba(0,0,0,.4);
+		//	@extend h1;
+		font-size: 6rem;
+
+		span {
+			font-size: 8rem;
+		}
 	}
 
 	> div {
