@@ -216,7 +216,7 @@ header .container, header #content, header #last .container > div:last-child, #l
         margin-bottom: .65em; } }
     #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
       display: block;
-      font-size: 10rem; }
+      font-size: 9.5rem; }
     @media (max-width: 1079px) {
       #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
         font-size: 4rem; }
