@@ -9,11 +9,11 @@ html {
   overflow-x: hidden;
   line-height: 1.5; }
 
-.pad, #carousel .row, #fun, #last .container > div:last-child, #last #content > div:last-child, #last .container > div:last-child > div:last-child {
+.pad, #carousel .row, #fun, #last > .container > div.mktoText, #last > #content > div.mktoText, #last > .container#last > div.mktoText > div.mktoText {
   padding-top: 14vh;
   padding-bottom: 14vh; }
   @media (max-width: 767px) {
-    .pad, #carousel .row, #fun, #last .container > div:last-child, #last #content > div:last-child, #last .container > div:last-child > div:last-child {
+    .pad, #carousel .row, #fun, #last > .container > div.mktoText, #last > #content > div.mktoText, #last > .container#last > div.mktoText > div.mktoText {
       padding-top: 80px;
       padding-bottom: 80px; } }
 
@@ -44,7 +44,7 @@ body {
   @media (max-width: 599px) {
     .videoContainer {
       display: none;
-      visibilty: hidden; } }
+      visibility: hidden; } }
   .videoContainer .fluid-width-video-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -62,7 +62,7 @@ header {
   background: #ea3f40;
   color: #fff; }
 
-header .container, header #content, header #last .container > div:last-child, #last header .container > div:last-child {
+header .container, header #content, header #last > .container > div.mktoText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,15 +70,13 @@ header .container, header #content, header #last .container > div:last-child, #l
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-#hero .container, #hero #content, #hero #last .container > div:last-child, #last #hero .container > div:last-child,
+#hero .container, #hero #content, #hero #last > .container > div.mktoText,
 footer .container,
 footer #content,
-footer #last .container > div:last-child,
-#last footer .container > div:last-child,
+footer #last > .container > div.mktoText,
 main .container,
 main #content,
-main #last .container > div:last-child,
-#last main .container > div:last-child {
+main #last > .container > div.mktoText {
   padding-top: 80px;
   padding-bottom: 80px; }
 
@@ -110,7 +108,7 @@ img {
   height: auto;
   max-width: 100%; }
 
-.container, #content, #last .container > div:last-child {
+.container, #content, #last > .container > div.mktoText {
   width: auto;
   max-width: 1080px;
   margin: 0 auto;
@@ -134,8 +132,7 @@ footer {
   
   footer .container,
   footer #content,
-  footer #last .container > div:last-child,
-  #last footer .container > div:last-child {
+  footer #last > .container > div.mktoText {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -151,8 +148,7 @@ footer {
       
       footer .container,
       footer #content,
-      footer #last .container > div:last-child,
-      #last footer .container > div:last-child {
+      footer #last > .container > div.mktoText {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -160,18 +156,18 @@ footer {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-        footer .container a, footer #content a, footer #last .container > div:last-child a, #last footer .container > div:last-child a {
+        footer .container a, footer #content a, footer #last > .container > div.mktoText a {
           max-width: 100%; } }
 
-header .container, header #content, header #last .container > div:last-child, #last header .container > div:last-child {
+header .container, header #content, header #last > .container > div.mktoText {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  header .container img, header #content img, header #last .container > div:last-child img, #last header .container > div:last-child img {
+  header .container img, header #content img, header #last > .container > div.mktoText img {
     max-width: 400px;
     width: 100%; }
 
-#hero .container, #hero #content, #hero #last .container > div:last-child, #last #hero .container > div:last-child {
+#hero .container, #hero #content, #hero #last > .container > div.mktoText {
   z-index: 999;
   width: 100%;
   position: relative;
@@ -193,45 +189,45 @@ header .container, header #content, header #last .container > div:last-child, #l
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last > .container > div.mktoText > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: Center;
     -ms-flex-align: Center;
     align-items: Center; }
-    #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last .container > div:last-child > div:last-child > *, #last #hero .container > div:last-child > div:last-child > * {
+    #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last > .container > div.mktoText > div:last-child > * {
       width: 50%; }
     @media (max-width: 767px) {
-      #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+      #hero .container > div:last-child, #hero #content > div:last-child, #hero #last > .container > div.mktoText > div:last-child {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-        #hero .container > div:last-child img, #hero #content > div:last-child img, #hero #last .container > div:last-child > div:last-child img, #last #hero .container > div:last-child > div:last-child img {
+        #hero .container > div:last-child img, #hero #content > div:last-child img, #hero #last > .container > div.mktoText > div:last-child img {
           width: 100%; }
-        #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last .container > div:last-child > div:last-child > *, #last #hero .container > div:last-child > div:last-child > * {
+        #hero .container > div:last-child > *, #hero #content > div:last-child > *, #hero #last > .container > div.mktoText > div:last-child > * {
           width: auto; } }
-  #hero .container img, #hero #content img, #hero #last .container > div:last-child img, #last #hero .container > div:last-child img {
+  #hero .container img, #hero #content img, #hero #last > .container > div.mktoText img {
     margin: 20px 0; }
-  #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+  #hero .container h1, #hero #content h1, #hero #last > .container > div.mktoText h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
     text-shadow: -5px 5px 0 #464646;
     font-size: 5rem; }
     @media (max-width: 599px) {
-      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+      #hero .container h1, #hero #content h1, #hero #last > .container > div.mktoText h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
         margin-bottom: .65em; } }
-    #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+    #hero .container h1 span, #hero #content h1 span, #hero #last > .container > div.mktoText h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
       display: block;
       font-size: 9.5rem; }
     @media (max-width: 1079px) {
-      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+      #hero .container h1, #hero #content h1, #hero #last > .container > div.mktoText h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
         font-size: 4rem; }
-        #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+        #hero .container h1 span, #hero #content h1 span, #hero #last > .container > div.mktoText h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
           font-size: 6rem; } }
     @media (max-width: 599px) {
-      #hero .container h1, #hero #content h1, #hero #last .container > div:last-child h1, #last #hero .container > div:last-child h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
+      #hero .container h1, #hero #content h1, #hero #last > .container > div.mktoText h1, #content #hero .container h2, #hero #content h2, #hero .container #fun h2, #fun #hero .container h2 {
         font-size: 9vw; }
-        #hero .container h1 span, #hero #content h1 span, #hero #last .container > div:last-child h1 span, #last #hero .container > div:last-child h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
+        #hero .container h1 span, #hero #content h1 span, #hero #last > .container > div.mktoText h1 span, #content #hero .container h2 span, #hero #content h2 span, #hero .container #fun h2 span, #fun #hero .container h2 span {
           font-size: 2.7rem; } }
-  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last .container > div:last-child > div:last-child, #last #hero .container > div:last-child > div:last-child {
+  #hero .container > div:last-child, #hero #content > div:last-child, #hero #last > .container > div.mktoText > div:last-child {
     /*	padding-bottom: 50px; */ }
 
 #content h1, #content h2,
@@ -248,7 +244,7 @@ header .container, header #content, header #last .container > div:last-child, #l
 #content h2:last-child {
   color: #ea3f40; }
 
-#content .container, #content #content, #content #last .container > div:last-child, #last #content .container > div:last-child {
+#content .container, #content #content, #content #last > .container > div.mktoText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -264,7 +260,7 @@ header .container, header #content, header #last .container > div:last-child, #l
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  #hero .container, #hero #content, #hero #last .container > div:last-child, #last #hero .container > div:last-child {
+  #hero .container, #hero #content, #hero #last > .container > div.mktoText {
     padding-top: 0;
     padding-bottom: 0; }
   @media (max-width: 991px) {
@@ -481,7 +477,7 @@ figure {
       #cta > * {
         width: 100%; } }
 
-#carousel .container, #carousel #content, #carousel #last .container > div:last-child, #last #carousel .container > div:last-child {
+#carousel .container, #carousel #content, #carousel #last > .container > div.mktoText {
   width: auto; }
 
 #carousel .row {
@@ -525,7 +521,7 @@ figure {
     transform: rotate(45deg) translateY(50%);
     background: #fff;
     position: absolute; }
-  #fun .container, #fun #content, #fun #last .container > div:last-child, #last #fun .container > div:last-child {
+  #fun .container, #fun #content, #fun #last > .container > div.mktoText {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -533,7 +529,7 @@ figure {
     display: -ms-flexbox;
     display: flex; }
     @media (max-width: 767px) {
-      #fun .container, #fun #content, #fun #last .container > div:last-child, #last #fun .container > div:last-child {
+      #fun .container, #fun #content, #fun #last > .container > div.mktoText {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -541,10 +537,10 @@ figure {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start; }
-        #fun .container > div, #fun #content > div, #fun #last .container > div:last-child > div, #last #fun .container > div:last-child > div {
+        #fun .container > div, #fun #content > div, #fun #last > .container > div.mktoText > div {
           padding-right: 0; } }
     @media (min-width: 768px) {
-      #fun .container > div, #fun #content > div, #fun #last .container > div:last-child > div, #last #fun .container > div:last-child > div {
+      #fun .container > div, #fun #content > div, #fun #last > .container > div.mktoText > div {
         padding-right: 3%; } }
   #fun .btn {
     position: relative;
@@ -567,9 +563,9 @@ figure {
 #last {
   color: #464646;
   position: relative; }
-  #last .container, #last #content, #last .container > div:last-child {
+  #last .container, #last #content, #last > .container > div.mktoText {
     max-width: 100%; }
-  #last .container > div:first-child, #last #content > div:first-child, #last .container > div:last-child > div:first-child {
+  #last > .container > div:first-child, #last > #content > div:first-child, #last > .container#last > div.mktoText > div:first-child {
     position: absolute;
     left: 0;
     right: 50%;
@@ -578,27 +574,27 @@ figure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    #last .container > div:first-child img, #last #content > div:first-child img, #last .container > div:last-child > div:first-child img {
+    #last > .container > div:first-child img, #last > #content > div:first-child img, #last > .container#last > div.mktoText > div:first-child img {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
-  #last .container > div:last-child, #last #content > div:last-child, #last .container > div:last-child > div:last-child {
+  #last > .container > div.mktoText, #last > #content > div.mktoText, #last > .container#last > div.mktoText > div.mktoText {
     width: 50%;
     width: auto;
     margin-left: 50%;
     text-align: center; }
-    #last .container > div:last-child > *, #last #content > div:last-child > *, #last .container > div:last-child > div:last-child > * {
+    #last > .container > div.mktoText > *, #last > #content > div.mktoText > *, #last > .container#last > div.mktoText > div.mktoText > * {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto; }
   @media (max-width: 767px) {
-    #last .container, #last #content, #last .container > div:last-child {
+    #last .container, #last #content, #last > .container > div.mktoText {
       padding: 0; }
-    #last .container > div, #last #content > div, #last .container > div:last-child > div {
+    #last .container > div, #last #content > div, #last > .container > div.mktoText > div {
       position: relative !important;
       padding: 0;
       width: 100%;
       margin: 0 !important; }
-      #last .container > div:last-child, #last #content > div:last-child, #last .container > div:last-child > div:last-child {
+      #last .container > div:last-child, #last #content > div:last-child, #last > .container > div.mktoText > div:last-child {
         padding: 60px 20px; } }

@@ -48,7 +48,7 @@ body {
 	bottom: -50%;
 	@media (max-width:599px) {
 		display: none;
-		visibilty: hidden;
+		visibility: hidden;
 	}
 
 	.fluid-width-video-wrapper {
@@ -651,7 +651,7 @@ figure {
 		max-width: 100%;
 	}
 
-	.container > div:first-child {
+	> .container > div:first-child {
 		position: absolute;
 		left: 0;
 		right: 50%;
@@ -666,7 +666,7 @@ figure {
 		}
 	}
 
-	.container > div:last-child {
+	> .container > div.mktoText {
 		@extend .pad;
 		@extend .container;
 		width: 50%;
