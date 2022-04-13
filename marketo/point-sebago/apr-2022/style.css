@@ -811,3 +811,13 @@ noscript+img {
   height: 0;
   display: flow-root;
 }
+
+@media (min-width:768px) {
+#last > .contianer > div:first-child {
+  width:50%;
+  }
+}
+
+#last > .contianer > div:first-child { {
+  width:100%;
+  }
