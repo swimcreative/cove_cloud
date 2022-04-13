@@ -813,11 +813,11 @@ noscript+img {
 }
 
 @media (min-width:768px) {
-#last > .contianer > div:first-child {
+#last > .container > div:first-child {
   width:50%;
   }
 }
 
-#last > .contianer > div:first-child { {
+#last > .container > div:first-child { {
   width:100%;
   }
