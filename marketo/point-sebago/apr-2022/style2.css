@@ -818,6 +818,6 @@ noscript+img {
   }
 }
 
-#last > .container > div:first-child { {
+#last > .container > div:first-child { 
   width:100%;
-  }
+ }
